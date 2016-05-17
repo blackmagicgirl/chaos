@@ -1,4 +1,4 @@
-; ; CrazyMod v9
+; Chaos v0.1
 
 77000 bomber airship
 77001 explosives magazine
@@ -64,11 +64,11 @@
 77061 chancellor's palace
 77062 ballistic anti-air battery
 77063 military camp
-77064 energetic ball
-77065 generate power ball
+77064 energy ball
+77065 generate energy ball
 77066 worker
 77067 erudite
-77068 clouds' storm
+77068 cloud storm
 77069 dragons' attack
 77070 airship factory
 77071 clone
@@ -102,7 +102,7 @@
 77099 hunting-ground
 77100 magnetic cannon
 77101 plasma cannon
-77102 dragons' range
+77102 dragons' breath
 77103 mobile sensor
 77104 dragons' armor
 77105 drone
@@ -123,14 +123,14 @@
 77120 undead slave
 77121 magic power
 77122 ghost
-77123 spectrum in armor
+77123 armored specter
 77124 winged horse
-77125 tame winged horse
+77125 call winged horse
 77126 thestral
 77127 surveillance tower
 77128 lich
 77129 arrows' trap
-77130 cross through wall
+77130 pass through wall
 77131 spook-light
 77132 call spook-lights
 77133 supply tunnel
@@ -147,16 +147,16 @@
 77144 wooded arena
 77145 leafy garden
 77146 ballista tower
-77147 campanile
-77148 enchanted wood
+77147 BELL TOWER
+77148 enchanted forest
 77149 root trap
 77150 harvester
 77151 belfry
 77152 nimble archer
 77153 forest archer
 77154 centaur
-77155 toughness in combat
-77156 ardor in combat
+77155 combat TOUGHNESS
+77156 combat ardor
 77157 observation post
 77158 missile anti-air battery
 77159 druid
@@ -168,10 +168,10 @@
 77165 swarm
 77166 terrors tower
 77167 green storm
-77168 transform corpses into ghosts
+77168 raise ghosts
 77169 penetrating roots
-77170 transform corpses into zombies
-77171 transform corpses into flesh golems
+77170 raise zombies
+77171 raise flesh golems
 77172 magnetic field
 77173 uncontroled magnetic field
 77174 vigilance tower
@@ -203,7 +203,7 @@
 77200 traditional
 77201 technical
 77202 robotic
-77203 dark
+77203 undead
 77204 elven
 77205 orc
 77206 solar ray
@@ -213,12 +213,12 @@
 77210 bombards tower
 77211 scree
 77212 massive tower
-77213 tame snakes
+77213 charm snakes
 77214 aggressiveness
 77215 watchfulness turret
 77216 hidden bomb
 77217 reinforced structure
-77218 elemental circle
+77218 fairy ring
 77219 fire tower
 77220 water tower
 77221 air tower
@@ -227,7 +227,7 @@
 77224 water elemental
 77225 air elemental
 77226 earth elemental
-77227 élémental
+77227 elemental
 77228 magnetic shooter
 77229 vermin
 77230 stump
@@ -262,13 +262,13 @@
 77259 scout firefly
 77260 dazzling firefly
 77261 blazing firefly
-77262 generate stump
-77263 generate larvae
+77262 sow stump
+77263 hatch larvae
 77264 larva
 77265 survival pheromone
 77266 toxic spores
 77267 hallucinogenic spores
-77268 care spores
+77268 healing spores
 77269 walking worker
 77270 winged worker
 77271 dark elf
@@ -285,7 +285,7 @@
 77282 assassin master
 77283 illusionist
 77284 puppet
-77285 doctress
+77285 doctor
 77286 flying shuriken
 77287 vortex
 77288 whirlwind
@@ -301,7 +301,7 @@
 77298 ambush turret
 77299 ambush high tower
 77300 perch tower
-77301 carnivore tree
+77301 carnivorous tree
 77302 voracious tree
 77303 root system
 77304 berserk
@@ -318,7 +318,7 @@
 77315 earthquake
 77316 fire blast
 77317 recover
-77318 blast of wind
+77318 wind blast
 77319 volcanic eruption
 77320 mud golem
 77321 sandstorm
