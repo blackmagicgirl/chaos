@@ -1772,7 +1772,7 @@ def perch_tower
 is_a building
 title 77300
 
-def carnivore_tree
+def carnivorous_tree
 is_a building
 title 77301
 launch_attack 78522 78523
@@ -1781,7 +1781,7 @@ death 77601 77602
 keyboard soldier7
 
 def voracious_tree
-is_a carnivore_tree
+is_a carnivorous_tree
 title 77302
 noise repeat 10 78504 78505
 launch_attack 78506 78507 78522 78523
@@ -1980,3 +1980,13 @@ keyboard soldier5
 def a_call_shadows
 title 77293
 alert 78555
+
+def wall
+is_a building
+title 4331
+shortcut a
+
+def gate
+is_a building
+title 4332
+shortcut g

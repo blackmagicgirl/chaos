@@ -211,6 +211,24 @@ can_use a_make_explosives_magazine_explode
 mana_max 200
 mana_regen 0.3
 
+def wall
+class building
+cost 7 9
+food_provided 0
+hp_max 500
+time_cost 90
+is_buildable_on_exits_only 1
+provides_survival 0
+
+def gate
+class building
+cost 10 10
+food_provided 0
+hp_max 450
+time_cost 90
+is_buildable_on_exits_only 1
+is_a_gate 1
+provides_survival 0
 
 
 
@@ -247,7 +265,7 @@ transport_volume 99
 def nothing
 decay 1
 
-; common researches
+; common upgrades
 
 def horse_speed
 class upgrade
@@ -496,7 +514,7 @@ cost 4 0
 time_cost 10
 hp_max 4
 speed 1.5
-can_build farm barracks lumbermill blacksmith stables workshop temple  dragonslair small_fort surveillance_tower
+can_build farm barracks lumbermill blacksmith stables workshop temple  dragonslair small_fort surveillance_tower gate wall
 range 0.8
 cooldown 1
 damage 1.5
@@ -604,7 +622,7 @@ is_a_detector 1
 transport_capacity 2
 
 
-; traditional researches
+; traditional upgrades
 
 def super_exorcism
 class upgrade
@@ -853,7 +871,7 @@ time_cost 10
 hp_max 6
 hp_max_bonus 2
 speed 1.6
-can_build animal_farm military_camp airship_factory hospital city_hall blacksmith explosives_magazine hidden_bomb observation_post
+can_build animal_farm military_camp airship_factory hospital city_hall blacksmith explosives_magazine hidden_bomb observation_post gate wall
 range 0.7
 cooldown 1
 damage 1
@@ -982,7 +1000,7 @@ can_use reinforced_structure
 
 
 
-; Technical researches
+; Technical upgrades
 
 def public_health
 class upgrade
@@ -1209,7 +1227,7 @@ cost 6 0
 time_cost 7
 hp_max 6
 speed 1.6
-can_build hydroponic_farm minicomputer robotic_factory magnecite_extractor signal_modulator optical_laboratory particle_accelerator garage radar_tower laser_tower magnetic_tower electric_trap
+can_build hydroponic_farm minicomputer robotic_factory magnecite_extractor signal_modulator optical_laboratory particle_accelerator garage radar_tower laser_tower magnetic_tower electric_trap gate wall
 range 0.7
 cooldown 1
 damage 1
@@ -1336,7 +1354,7 @@ transport_capacity 1
 
 
 
-; Robotic researches
+; Robotic upgrades
 
 def high_quality_magnesite
 class upgrade
@@ -1581,7 +1599,7 @@ speed 1.3
 range 1
 cooldown 1
 damage 1.8
-can_build scavengers_farm vault crypt labyrinth graveyard dark_tower bone_trap
+can_build scavengers_farm vault crypt labyrinth graveyard dark_tower bone_trap gate wall
 
 def ghoul
 is_a entity
@@ -1791,7 +1809,7 @@ is_vulnerable 0
 is_teleportable 0
 
 
-; Undead researches
+; Undead upgrades
 
 
 
@@ -2146,7 +2164,7 @@ cost 3 1
 time_cost 10
 hp_max 4
 speed 1.7
-can_build fruit_farm wooded_arena lumbermill leafy_garden sunny_library enchanted_forest clearing vigilance_tower root_trap
+can_build fruit_farm wooded_arena lumbermill leafy_garden sunny_library enchanted_forest clearing vigilance_tower root_trap gate wall
 range 1
 cooldown 1
 damage 1.4
@@ -2297,7 +2315,7 @@ transport_volume 99
 
 
 
-; Elven researches
+; Elven upgrades
 
 def steel_leaf
 class upgrade
@@ -2599,7 +2617,7 @@ is_a peasant
 time_cost 12
 hp_max 5
 speed 1.4
-can_build pigsty pit pen nest tepee encampment explosives_magazine promontory spike_trap
+can_build pigsty pit pen nest tepee encampment explosives_magazine promontory spike_trap  gate wall
 range 0.9
 cooldown 1
 damage 2
@@ -2760,7 +2778,7 @@ corpse 0
 
 
 
-; Orc researches
+; Orc upgrades
 
 def aggressiveness
 class upgrade
@@ -2925,9 +2943,7 @@ class building
 cost 50 50
 hp_max 266.7
 time_cost 90
-; requirements castle
 can_train mage
-; can_research u_unstable_portal ; u_teleportation u_summon_dragon u_meteors
 range 4.5
 cooldown 1.5
 damage 8
@@ -2946,7 +2962,7 @@ speed 1.9
 transport_volume 99
 airground_type air
 is_a_detector 1
-can_build power_farm earth_tower fire_tower water_tower air_tower magestower fairy_ring
+can_build power_farm earth_tower fire_tower water_tower air_tower magestower fairy_ring gate wall
 
 def earth_elemental
 class soldier
@@ -3050,7 +3066,7 @@ target_types ground air
 transport_volume 2
 
 
-; Elemental researches
+; Elemental upgrades
 
 def super_armor
 class upgrade
@@ -3339,7 +3355,7 @@ class worker
 cost 3 1
 time_cost 12
 hp_max 6
-can_build hunting_ground trainings_bivouac lumbermill burrow mahouts_house wild_beasts_cage spells_hut hideout
+can_build hunting_ground trainings_bivouac lumbermill burrow mahouts_house wild_beasts_cage spells_hut hideout gate wall
 speed 1.6
 range 5.5
 cooldown 2
@@ -3513,7 +3529,7 @@ can_upgrade_to
 
 
 
-; Savage researches
+; Savage upgrades
 
 
 
@@ -3834,6 +3850,7 @@ cooldown 2
 target_types ground air
 airground_type air
 transport_volume 99
+can_build  gate wall
 can_upgrade_to royal_worker
 
 def royal_worker
@@ -4330,7 +4347,7 @@ cost 4 1
 time_cost 7
 hp_max 4
 speed 1.8
-can_build aviary cutlery playhouse cenacle shack watchfulness_turret lumbermill blacksmith
+can_build aviary cutlery playhouse cenacle shack watchfulness_turret lumbermill blacksmith gate wall
 damage 0
 is_invisible 1
 is_a_detector 1
@@ -4528,7 +4545,7 @@ corpse 0
 transport_volume 99
 
 
-; Dark Elf researches
+; Dark Elf upgrades
 
 def throwing_technique
 class upgrade
