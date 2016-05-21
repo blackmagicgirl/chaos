@@ -367,6 +367,30 @@ noise repeat 40 77558 77559 77560 77561 77562
 attack_hit 77563
 shortcut t
 
+def electric_fence
+is_a building
+title 77336
+
+def high_voltage_electric_fence
+is_a building
+title 77337
+
+def plasma_shield
+is_a building
+title 77338
+
+def electromagnetic_field
+is_a building
+title 77339
+
+def high_voltage_electromagnetic_field
+is_a building
+title 77340
+
+def laser_gate
+is_a building
+title 77341
+
 def electric_trap
 is_a building
 title 77016
@@ -413,6 +437,14 @@ def a_uncontrolled_magnetic_field
 title 77173
 alert 77907
 shortcut u
+
+def emp
+title 77342
+;noise_loop ?
+
+def a_emp
+title 77342
+;alert ??
 
 
 def undead
@@ -1597,6 +1629,22 @@ noise repeat 30 77983
 launch_attack 77812
 attack_hit 77973
 shortcut a
+
+def earth_wall
+is_a building
+title 77332
+
+def fire_wall
+is_a building
+title 77333
+
+def water_gate
+is_a building
+title 77334
+
+def air_gate
+is_a building
+title 77335
 
 def super_armor
 title 77075

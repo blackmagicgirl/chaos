@@ -211,24 +211,24 @@ can_use a_make_explosives_magazine_explode
 mana_max 200
 mana_regen 0.3
 
-def wall
+def barrier
 class building
-cost 7 9
 food_provided 0
-hp_max 500
-time_cost 90
 is_buildable_on_exits_only 1
 provides_survival 0
 
+def wall
+is_a barrier
+cost 7 9
+hp_max 500
+time_cost 90
+
 def gate
-class building
+is_a barrier
 cost 10 10
-food_provided 0
 hp_max 450
 time_cost 90
-is_buildable_on_exits_only 1
 is_a_gate 1
-provides_survival 0
 
 
 
@@ -1217,6 +1217,85 @@ damage_radius 12
 is_buildable_anywhere 1
 can_use high_quality_magnesite highest_quality_magnesite
 
+def electric_fence
+is_a wall
+cost 20 0
+requirements magnecite_extractor
+hp_max 400
+time_cost 40
+range 2
+cooldown 10
+damage 30
+splash 1
+damage_radius 12
+can_use high_quality_magnecite highest_quality_magnecite
+can_upgrade_to high_voltage_electric_fence
+
+def high_voltage_electric_fence
+is_a electric_fence
+cost 40 0
+requirements mainframe_computer
+hp_max 600
+time_cost 50
+damage 60
+can_upgrade_to
+
+
+def plasma_shield
+is_a wall
+cost 80 0
+requirements particle_accelerator
+hp_max 1000
+hp_regen 6
+time_cost 90
+range 2
+cooldown 0.5
+damage 3
+splash 1
+damage_radius 3
+can_use plasma_power
+
+def electromagnetic_field
+is_a gate
+cost 30 0
+time_cost 20
+hp_max 500
+mana_max 300
+mana_regen 2
+requirements magnecite_extractor
+is_a_detector 1
+is_invisible 1
+can_upgrade_to high_voltage_electromagnetic_field
+
+
+def high_voltage_electromagnetic_field
+is_a electromagnetic_field
+cost 50 0
+time_cost 40
+hp_max 700
+hp_regen 4
+requirements mainframe_computer
+range 2
+cooldown 0.5
+damage 2
+splash 1
+damage_radius 12
+can_use high_quality_magnecite highest_quality_magnecite a_emp
+can_upgrade_to
+
+def laser_gate
+is_a gate
+cost 30 0
+time_cost 30
+requirements optical_laboratory
+hp_max 500
+range 12
+damage 3
+damage_bonus 1
+cooldown 0.25
+target_types ground air
+can_use laser_power
+
 
 ; Robotic units
 
@@ -1234,7 +1313,7 @@ cost 6 0
 time_cost 7
 hp_max 6
 speed 1.6
-can_build hydroponic_farm minicomputer robotic_factory magnecite_extractor signal_modulator optical_laboratory particle_accelerator garage radar_tower laser_tower magnetic_tower electric_trap gate wall
+can_build hydroponic_farm minicomputer robotic_factory magnecite_extractor signal_modulator optical_laboratory particle_accelerator garage radar_tower laser_tower magnetic_tower electric_trap electromagnetic_field laser_gate electric_fence  plasma_shield
 range 0.7
 cooldown 1
 damage 1
@@ -1430,6 +1509,19 @@ effect_target ask
 effect_range inf
 universal_notification 1
 
+def emp
+class effect
+harm_level 40
+harm_target_types repairable
+is_a_detector 1
+is_vulnerable 0
+
+def a_emp
+class ability
+mana_cost 100
+effect summon 90 emp
+effect_target ask
+effect_range nearby
 
 
 
@@ -2973,6 +3065,58 @@ damage 8
 target_types ground air
 
 
+def earth_wall
+is_a wall
+requirements earth_tower
+cost 100 75
+hp_max 1000
+armor 10
+time_cost 1350
+bonus_height 1
+
+def fire_wall
+is_a wall
+requirements fire_tower
+cost 75 100
+hp_max 450
+time_cost 900
+bonus_height 1
+is_a_detector 1
+damage 7
+range 3
+cooldown 2.5
+target_types ground air
+splash 1
+damage_radius 0.4
+
+def water_gate
+is_a gate
+requirements water_tower
+cost 125 50
+hp_max 800
+time_cost 900
+bonus_height 1
+is_a_detector 1
+hp_regen 10
+heal_level 10
+
+def air_gate
+is_a gate
+requirements air_tower
+cost 50 125
+hp_max 600
+time_cost 700
+bonus_height 1
+is_a_detector 1
+is_invisible 1
+damage 7
+range 6
+cooldown 2
+target_types ground air
+splash 1
+damage_radius 0.75
+
+
 ; Elemental units
 
 def fairy
@@ -2987,7 +3131,7 @@ target_types
 transport_volume 99
 airground_type air
 is_a_detector 1
-can_build power_farm earth_tower fire_tower water_tower air_tower magestower fairy_ring gate wall
+can_build power_farm earth_tower fire_tower water_tower air_tower magestower fairy_ring earth_wall fire_wall water_gate air_gate
 
 def earth_elemental
 class soldier

@@ -332,3 +332,14 @@
 77329 plagued cadaver
 77330 transmit the plague to the corpses
 77331 shadow
+77332 earth wall
+77333 fire wall
+77334 water gate
+77335 air gate
+77336 electric fence
+77337 high voltage electric fence
+77338 plasma shield
+77339 electromagnetic field
+77340 high voltage electromagnetic field
+77341 laser gate
+77342 electromagnetic pulse
