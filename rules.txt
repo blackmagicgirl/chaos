@@ -1223,8 +1223,8 @@ cost 20 0
 requirements magnecite_extractor
 hp_max 400
 time_cost 40
-range 2
-cooldown 10
+range 3
+cooldown 6
 damage 30
 splash 1
 damage_radius 12
@@ -1234,11 +1234,16 @@ can_upgrade_to high_voltage_electric_fence
 def high_voltage_electric_fence
 is_a electric_fence
 cost 40 0
-requirements mainframe_computer
+requirements magnecite_extractor mainframe_computer
 hp_max 600
+mana_max 200
+mana_regen 2
 time_cost 50
+armor 2
+range 4
 damage 60
 can_upgrade_to
+can_use a_power_surge
 
 
 def plasma_shield
@@ -1247,35 +1252,40 @@ cost 80 0
 requirements particle_accelerator
 hp_max 1000
 hp_regen 6
+mana_max 200
+mana_regen 2
 time_cost 90
-range 2
-cooldown 0.5
-damage 3
+armor 4
+range 3
+cooldown 0.75
+damage 4
 splash 1
 damage_radius 3
-can_use plasma_power
+can_use plasma_power a_emergency_power
 
 def electromagnetic_field
 is_a gate
 cost 30 0
 time_cost 20
-hp_max 500
-mana_max 300
-mana_regen 2
+hp_max 768
+hp_regen 16
 requirements magnecite_extractor
+armor 1.5
 is_a_detector 1
 is_invisible 1
 can_upgrade_to high_voltage_electromagnetic_field
-
 
 def high_voltage_electromagnetic_field
 is_a electromagnetic_field
 cost 50 0
 time_cost 40
-hp_max 700
-hp_regen 4
-requirements mainframe_computer
-range 2
+hp_max 1024
+hp_regen 8
+mana_max 300
+mana_regen 2
+requirements magnecite_extractor mainframe_computer
+armor 2.5
+range 6
 cooldown 0.5
 damage 2
 splash 1
@@ -1512,17 +1522,40 @@ universal_notification 1
 def emp
 class effect
 harm_level 40
-harm_target_types repairable
+harm_target_type -healable unit
 is_a_detector 1
 is_vulnerable 0
 
 def a_emp
 class ability
 mana_cost 100
-effect summon 90 emp
+requirements signal_modulator
+effect summon 10 emp
 effect_target ask
 effect_range nearby
 
+def power_surge
+class effect
+harm_level 256
+harm_target_type ground
+
+def a_power_surge
+class ability
+mana_cost 200
+effect summon 3 power_surge
+effect_target ask
+effect_range square
+
+def emergency_power:
+class effect
+heal_level 1250
+
+def a_emergency_power
+class ability
+mana_cost 200
+effect summon 1 emergency_power
+effect_target self
+effect_range square
 
 
 
@@ -3071,7 +3104,7 @@ requirements earth_tower
 cost 100 75
 hp_max 1000
 armor 10
-time_cost 1350
+time_cost 650
 bonus_height 1
 
 def fire_wall
@@ -3079,25 +3112,27 @@ is_a wall
 requirements fire_tower
 cost 75 100
 hp_max 450
-time_cost 900
+time_cost 400
+armor 3
 bonus_height 1
 is_a_detector 1
-damage 7
+damage 5
 range 3
-cooldown 2.5
+cooldown 0.5
 target_types ground air
 splash 1
-damage_radius 0.4
+damage_radius 1.4
 
 def water_gate
 is_a gate
 requirements water_tower
 cost 125 50
 hp_max 800
-time_cost 900
+hp_regen 12
+time_cost 500
+armor 2
 bonus_height 1
 is_a_detector 1
-hp_regen 10
 heal_level 10
 
 def air_gate
@@ -3105,16 +3140,15 @@ is_a gate
 requirements air_tower
 cost 50 125
 hp_max 600
-time_cost 700
-bonus_height 1
+time_cost 300
 is_a_detector 1
 is_invisible 1
 damage 7
-range 6
-cooldown 2
+range 7
+cooldown 1.7
 target_types ground air
 splash 1
-damage_radius 0.75
+damage_radius 8.75
 
 
 ; Elemental units

@@ -446,6 +446,18 @@ def a_emp
 title 77342
 ;alert ??
 
+def power_surge
+title 77343
+
+def a_power_surge
+title 77343
+
+def emergency_power
+title 77344
+
+def a_emergency_power
+title 77344
+
 
 def undead
 title 77203
@@ -2297,4 +2309,3 @@ def a_call_shadows
 title 77293
 alert 78555
 shortcut s
-

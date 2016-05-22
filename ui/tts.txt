@@ -343,3 +343,5 @@
 77340 high voltage electromagnetic field
 77341 laser gate
 77342 electromagnetic pulse
+77343 power surge
+77344 emergency power
