@@ -711,7 +711,7 @@ class ability
 mana_cost 150
 effect summon 60 exorcism
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def a_resurrection
 class ability
@@ -1023,7 +1023,7 @@ class ability
 mana_cost 200
 effect summon 3 small_explosion
 effect_target ask
-effect_range square
+effect_range 6
 universal_notification 1
 
 def tear_gas
@@ -1038,7 +1038,7 @@ class ability
 mana_cost 50
 effect summon 15 tear_gas
 effect_target ask
-effect_range nearby
+effect_range 12
 
 
 ; Robots
@@ -1395,7 +1395,7 @@ class ability
 mana_cost 100
 effect summon 90 magnetic_field
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def a_uncontrolled_magnetic_field
 class ability
@@ -1409,7 +1409,7 @@ class ability
 mana_cost 50
 effect conversion
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def a_radar_image
 class ability
@@ -1838,7 +1838,7 @@ class ability
 mana_cost 200
 effect summon 90 evil_fog
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def a_call_ectoplasm
 class ability
@@ -1870,7 +1870,7 @@ class ability
 mana_cost 150
 effect summon 60 deadly_fog
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def a_raise_dead
 class ability
@@ -1893,7 +1893,7 @@ class ability
 mana_cost 200
 effect summon 300 necromantic_field
 effect_target ask
-effect_range square
+effect_range 6
 
 def cadaveric_explosion
 class effect
@@ -1905,7 +1905,7 @@ class ability
 mana_cost 50
 effect raise_dead 1 cadaveric_explosion cadaveric_explosion cadaveric_explosion cadaveric_explosion cadaveric_explosion cadaveric_explosion cadaveric_explosion cadaveric_explosion cadaveric_explosion cadaveric_explosion
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def plagued_cadaver
 class soldier
@@ -1923,14 +1923,14 @@ class ability
 mana_cost 100
 effect raise_dead 90 plagued_cadaver plagued_cadaver plagued_cadaver plagued_cadaver plagued_cadaver plagued_cadaver plagued_cadaver plagued_cadaver plagued_cadaver plagued_cadaver
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def a_sow_darkness_tree
 class ability
 mana_cost 175
 effect summon 1000 darkness_tree
 effect_target ask
-effect_range square
+effect_range 6
 
 def a_recycle_deads_into_carnivorous_plants
 class ability
@@ -1942,14 +1942,14 @@ class ability
 mana_cost 200
 effect summon 120 2 spook_light
 effect_target ask
-effect_range square
+effect_range 6
 
 def a_pass_through_wall
 class ability
 mana_cost 200
 effect teleportation
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def deaths_breath
 class effect
@@ -1961,7 +1961,7 @@ class ability
 mana_cost 200
 effect summon 3 deaths_breath
 effect_target ask
-effect_range nearby
+effect_range 12
 
 
 
@@ -2364,7 +2364,7 @@ class ability
 mana_cost 200
 effect summon 8 solar_ray
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def wooded_illusion
 class effect
@@ -2380,7 +2380,7 @@ class ability
 mana_cost 175
 effect summon 1000 serenity_tree
 effect_target ask
-effect_range square
+effect_range 6
 
 def a_recycle_deads_into_medicinal_plants
 class ability
@@ -2424,7 +2424,7 @@ mana_cost 200
 requirements leafy_garden sunny_library
 effect summon 10 2 nimble_archer_clone
 effect_target ask
-effect_range square
+effect_range 6
 
 def meteors
 class effect
@@ -2436,7 +2436,7 @@ class ability
 mana_cost 200
 effect summon 5 meteors
 effect_target ask
-effect_range nearby
+effect_range 12
 
 
 
@@ -2799,7 +2799,7 @@ class ability
 mana_cost 200
 effect summon 2 small_explosion
 effect_target ask
-effect_range square
+effect_range 6
 universal_notification 1
 
 def a_possession
@@ -2820,7 +2820,7 @@ class ability
 mana_cost 100
 effect summon 1 thunderbolt
 effect_target ask
-effect_range nearby
+effect_range 12
 universal_notification 1
 
 def cloud_storm
@@ -2834,7 +2834,7 @@ class ability
 mana_cost 175
 effect summon 180 cloud_storm
 effect_target ask
-effect_range nearby
+effect_range 12
 
 
 
@@ -3106,7 +3106,7 @@ requirements earth_tower
 mana_cost 200
 effect summon 9 earthquake
 effect_target ask
-effect_range square
+effect_range 6
 
 def fireblast
 class effect
@@ -3119,7 +3119,7 @@ requirements fire_tower
 mana_cost 200
 effect summon 1 fireblast
 effect_target ask
-effect_range square
+effect_range 6
 
 def recover
 class effect
@@ -3131,14 +3131,14 @@ requirements water_tower
 mana_cost 200
 effect summon 1 recover
 effect_target ask
-effect_range square
+effect_range 6
 
 def a_windblast
 class ability
 mana_cost 200
 effect teleportation
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def volcanic_eruption
 class effect
@@ -3151,7 +3151,7 @@ requirements earth_tower fire_tower
 mana_cost 200
 effect summon 90 volcanic_eruption
 effect_target ask
-effect_range square
+effect_range 6
 
 def mud_golem
 class soldier
@@ -3184,7 +3184,7 @@ requirements earth_tower air_tower
 mana_cost 200
 effect summon 90 sandstorm
 effect_target ask
-effect_range square
+effect_range 6
 
 def vapor_cloud
 class effect
@@ -3197,7 +3197,7 @@ requirements fire_tower water_tower
 mana_cost 200
 effect summon 90 vapor_cloud
 effect_target ask
-effect_range square
+effect_range 6
 
 def magnetic_thunderstorm
 class soldier
@@ -3225,7 +3225,7 @@ mana_cost 200
 requirements fire_tower air_tower
 effect summon 90 magnetic_thunderstorm
 effect_target ask
-effect_range square
+effect_range 6
 
 def ice_sky
 class effect
@@ -3238,7 +3238,7 @@ requirements water_tower air_tower
 mana_cost 200
 effect summon 90 ice_sky
 effect_target ask
-effect_range square
+effect_range 6
 
 
 ; Savages
@@ -3570,7 +3570,7 @@ class ability
 mana_cost 200
 effect summon 0 arrows_trap
 effect_target ask
-effect_range square
+effect_range 6
 
 def swarm
 class effect
@@ -3582,7 +3582,7 @@ class ability
 mana_cost 200
 effect summon 360 swarm
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def green_storm
 class effect
@@ -3594,7 +3594,7 @@ class ability
 mana_cost 200
 effect summon 360 green_storm
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def penetrating_roots
 class effect
@@ -3606,7 +3606,7 @@ class ability
 mana_cost 200
 effect summon 360 penetrating_roots
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def sentinel_tree
 class soldier
@@ -3631,14 +3631,14 @@ class ability
 mana_cost 175
 effect summon 0 sentinel_tree
 effect_target ask
-effect_range square
+effect_range 6
 
 def a_sow_vine
 class ability
 mana_cost 150
 effect summon 0 peaceful_vine
 effect_target ask
-effect_range nearby
+effect_range 12
 
 
 
@@ -4115,7 +4115,7 @@ class ability
 mana_cost 200
 effect summon 150 stump
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def a_larvae1
 class ability
@@ -4154,7 +4154,7 @@ class ability
 mana_cost 200
 effect resurrection 100
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def toxic_spores
 class effect
@@ -4167,7 +4167,7 @@ class ability
 mana_cost 175
 effect summon 60 toxic_spores
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def hallucinogenic_spores
 class effect
@@ -4178,7 +4178,7 @@ class ability
 mana_cost 175
 effect summon 60 hallucinogenic_spores
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def healing_spores
 class effect
@@ -4190,7 +4190,7 @@ class ability
 mana_cost 175
 effect summon 60 healing_spores
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def blaze
 class effect
@@ -4202,7 +4202,7 @@ class ability
 mana_cost 200
 effect summon 30 blaze
 effect_target ask
-effect_range square
+effect_range 6
 
 
 
@@ -4592,7 +4592,7 @@ class ability
 mana_cost 200
 effect summon 1 fatal_blade
 effect_target ask
-effect_range square
+effect_range 6
 
 def rain_of_arrows
 class soldier
@@ -4613,14 +4613,14 @@ class ability
 mana_cost 200
 effect summon 1 rain_of_arrows
 effect_target ask
-effect_range square
+effect_range 6
 
 def a_call_shadows
 class ability
 mana_cost 200
 effect summon 5 2 shadow
 effect_target ask
-effect_range square
+effect_range 6
 
 def a_puppet
 class ability
@@ -4638,7 +4638,7 @@ class ability
 mana_cost 175
 effect summon 300 smoke
 effect_target ask
-effect_range square
+effect_range 6
 
 def a_flying_shuriken
 class ability
@@ -4650,11 +4650,11 @@ class ability
 mana_cost 175
 effect summon 300 1 root_system
 effect_target ask
-effect_range square
+effect_range 6
 
 def a_vortex 
 class ability
 mana_cost 200
 effect summon 300 vortex
 effect_target ask
-effect_range square
+effect_range 6
