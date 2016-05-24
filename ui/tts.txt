@@ -1,4 +1,4 @@
-; Chaos v0.1
+; Chaos v0.2
 
 77000 bomber airship
 77001 explosives magazine

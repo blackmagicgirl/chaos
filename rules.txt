@@ -1,4 +1,4 @@
-; Chaos v0.1
+; Chaos v0.2
 ; based on CrazyMod 9
 `
 clear
@@ -4146,8 +4146,8 @@ def a_supply_tunnel
 class ability
 mana_cost 200
 effect summon 0 1 supply_tunnel 4 walking_worker 4 guardian_termite
-effect_target random
-effect_range anywhere
+effect_target ask
+effect_range 24
 
 def a_survival_pheromone
 class ability
