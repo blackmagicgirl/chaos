@@ -4658,3 +4658,358 @@ mana_cost 200
 effect summon 300 vortex
 effect_target ask
 effect_range 6
+
+
+; alien
+
+def alien
+class race
+townhall mother_ship
+farm nutri_matic
+peasant grey
+easy c_alien
+aggressive alien
+
+
+; alien buildings
+
+def mother_ship
+class soldier
+cost 20 12
+food_provided 15
+hp_max 1300
+time_cost 200
+storable_resource_types 0 1
+can_train grey
+armor 2.5
+cooldown 5
+target_types ground air
+range 12
+damage 15
+speed .75
+is_ballistic 1
+is_a_detector 1
+airground_type air
+is_invisible 1
+transport_volume 99
+transport_copacity 15
+bonus_height 1
+
+def nutri_matic
+class building
+cost 10 5
+requirements mother_ship
+food_provided 8
+hp_max 150
+time_cost 50
+
+def indoctrination_pod
+class building
+cost 13 4
+time_cost 90
+requirements mother_ship
+hp_max 275
+can_train human_slave
+
+def troop_replicator
+class building
+cost 21 5
+hp_max 275
+time_cost 90
+requirements mother_ship
+can_train reptilian_warrior
+
+def factory
+class building
+cost 30 20
+hp_max 300
+time_cost 90
+requirements mother_ship
+can_train flying_saucer
+can_research improved_armor superspeed
+
+def surveillance_tower
+class building
+provides_survival 0
+cost 4 2
+time_cost 60
+hp_max 33
+bonus_height 1
+is_buildable_anywhere 1
+can_upgrade_to defense_tower BELL_TOWER
+
+def defense_tower
+is_a surveillance_tower
+cost 7 5
+time_cost 85
+requirements mother_ship lumbermill
+hp_max 66
+can_use archer_weapon archer_range
+armor 1
+range 10
+damage 6
+cooldown 1
+target_types ground air
+is_ballistic 1
+can_upgrade_to ballista_tower
+
+def ballista_tower
+is_a defense_tower
+cost 14 10
+time_cost 120
+requirements mother_ship workshop
+hp_max 100
+armor 1.5
+range 16
+damage 10
+cooldown 2
+minimal_range 4
+is_ballistic 1
+can_upgrade_to 
+
+def BELL_TOWER
+is_a surveillance_tower
+cost 7 5
+time_cost 85
+requirements mother_ship temple
+hp_max 50
+armor 0.75
+heal_level 1
+can_research COMBAT_TOUGHNESS
+transport_capacity 10
+can_upgrade_to BELFRY
+
+def BELFRY
+is_a BELL_TOWER
+cost 12 8
+time_cost 120
+requirements mother_ship
+hp_max 100
+armor 1
+range 2
+damage 3
+cooldown 4
+can_research COMBAT_TOUGHNESS combat_ardor
+storable_resource_types 0
+transport_capacity 30
+can_upgrade_to 
+
+
+
+; traditional units
+
+def grey
+is_a peasant
+cost 4 0
+time_cost 10
+hp_max 4
+speed 1.5
+can_build nutri_matic factory lumbermill blacksmith indoctrination_pod troop_replicator  dragonslair mother_ship surveillance_tower gate wall
+range 0.8
+cooldown 1
+damage 1.5
+can_use COMBAT_TOUGHNESS combat_ardor
+
+def crossbowman
+class soldier
+cost 6 2
+time_cost 18
+hp_max 12
+speed 1.5
+requirements lumbermill
+can_use archer_weapon archer_armor archer_range COMBAT_TOUGHNESS combat_ardor
+armor 0.5
+cooldown 3
+target_types ground air
+range 8
+damage 6
+is_ballistic 1
+
+def knight
+class soldier
+cost 14 0
+food_cost 2
+time_cost 20
+hp_max 25
+requirements mother_ship stables
+can_use melee_weapon melee_armor horse_speed COMBAT_TOUGHNESS combat_ardor
+speed 2.3
+speed_bonus 1
+armor 1
+armor_bonus 1.25
+range 1
+cooldown 1.5
+damage 6
+damage_bonus 3
+transport_volume 3
+can_upgrade_to paladin
+
+def paladin
+is_a knight
+cost 22 0
+time_cost 50
+hp_max 30
+requirements mother_ship stables temple
+damage 9.5
+damage_bonus 3.5
+range 1.1
+cooldown 2.25
+is_a_detector 1
+can_upgrade_to
+
+def catapult
+class soldier
+cost 9 5
+food_cost 2
+time_cost 30
+hp_max 30
+speed 0.75
+minimal_range 4
+is_ballistic 1
+cooldown 4
+damage 8
+damage_radius 1
+splash 1
+is_repairable 1
+is_healable 0
+transport_volume 4
+corpse 0
+
+def priest
+class soldier
+cost 13 6
+food_cost 2
+time_cost 20
+hp_max 30
+hp_max_bonus 5
+mana_max 200
+mana_regen 1
+speed 1
+can_use a_holy_vision a_exorcism a_conversion a_resurrection superhealer super_exorcism COMBAT_TOUGHNESS
+heal_level 1
+transport_volume 2
+is_a_detector 1
+harm_target_type undead
+
+def dragon
+class soldier
+cost 15 10
+food_cost 3
+time_cost 20
+airground_type air
+hp_max 30
+speed 1.75
+bonus_height 1 ; can see the adjacent squares
+range 3
+cooldown 3
+damage 6
+target_types ground air
+damage_radius 1
+splash 1
+transport_volume 99
+can_use dragons_life dragons_attack dragons_breath dragons_armor dragons_speed
+is_a_detector 1
+transport_capacity 2
+
+
+; traditional upgrades
+
+def super_exorcism
+class upgrade
+cost 40 10
+time_cost 120
+effect bonus harm_level 1
+
+def superhealer
+class upgrade
+cost 80 20
+time_cost 150
+effect bonus heal_level 2
+requirements mother_ship
+
+def COMBAT_TOUGHNESS
+class upgrade
+cost 8 4
+time_cost 150
+effect bonus armor 0.33
+
+def combat_ardor
+class upgrade
+cost 8 4
+time_cost 150
+effect bonus damage 0.66
+
+def dragons_life
+class upgrade
+cost 20 15
+time_cost 60
+effect bonus hp_max 6
+
+def dragons_attack
+class upgrade
+cost 20 15
+time_cost 60
+effect bonus damage 2
+
+def dragons_breath
+class upgrade
+cost 20 15
+time_cost 60
+effect bonus range 2
+
+def dragons_armor
+class upgrade
+cost 20 15
+time_cost 60
+effect bonus armor 2
+
+def dragons_speed
+class upgrade
+cost 20 15
+time_cost 60
+effect bonus speed 0.5
+
+
+
+
+; traditional skills
+
+def holy_vision
+class soldier
+presence 0 ; casting holy vision on a square doesn't trigger "player has entered the square"
+food_cost 0
+corpse 0
+is_vulnerable 0
+is_invisible 1
+is_a_detector 1
+
+def a_holy_vision
+class ability
+mana_cost 125
+effect summon 10 holy_vision
+effect_target ask
+effect_range anywhere
+
+def exorcism
+class effect
+harm_level 2
+harm_target_type undead
+can_use super_exorcism
+
+def a_exorcism
+class ability
+mana_cost 150
+effect summon 60 exorcism
+effect_target ask
+effect_range nearby
+
+def a_resurrection
+class ability
+mana_cost 150
+effect resurrection 6
+
+def a_conversion
+class ability
+mana_cost 150
+effect conversion
+effect_target ask

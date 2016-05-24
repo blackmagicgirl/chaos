@@ -2250,3 +2250,18 @@ title 77293
 alert 78555
 shortcut s
 
+def alien
+title 42001
+
+def mother_ship
+is_a building
+title 42002
+noise repeat 30 77942 77943
+move 77947 77948
+launch_attack 77944 9999 9999 9999
+attack_hit 77592 77610 77595 77596
+
+def grey
+is_a peasant
+title 42003
+>>>>>>> c90e977... Foundation for the alien race.

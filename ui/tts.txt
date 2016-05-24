@@ -332,3 +332,6 @@
 77329 plagued cadaver
 77330 transmit the plague to the corpses
 77331 shadow
+42001 alien
+42002 mother ship
+42003 grey
