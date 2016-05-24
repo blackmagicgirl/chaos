@@ -72,7 +72,7 @@
 77069 dragons' attack
 77070 airship factory
 77071 clone
-77072 rogue
+77072 outlaw
 77073 cloned nimble archer
 77074 spying airship
 77075 super armor

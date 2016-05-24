@@ -3247,7 +3247,7 @@ def savage
 class race
 townhall hideout
 farm hunting_ground
-peasant rogue
+peasant outlaw
 easy c_savage
 aggressive savage
 
@@ -3260,7 +3260,7 @@ cost 12 12
 time_cost 120
 hp_max 166
 storable_resource_types 0 1
-can_train rogue
+can_train outlaw
 is_invisible 1
 can_upgrade_to thicket_of_the_brigands
 
@@ -3350,7 +3350,7 @@ can_use archer_weapon archer_range
 
 ; Savage units
 
-def rogue
+def outlaw
 class worker
 cost 3 1
 time_cost 12

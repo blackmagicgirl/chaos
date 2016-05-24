@@ -367,16 +367,16 @@ raise_dead 1
 retaliate 1
 
 label c_savage1
-get hideout 11 rogue
+get hideout 11 outlaw
 get 8 huntress
 get 18 archer
 get 10 witch
-get 16 rogue
+get 16 outlaw
 get 18 huntress
 get 18 witch
 get 28 archer
 get 25 huntress
-get 24 rogue
+get 24 outlaw
 get 2 trainings_bivouac
 get 36 archer
 get 2 spells_hut
@@ -384,12 +384,12 @@ get 30 witch
 get 40 huntress
 get 54 archer
 get 40 witch
-get 38 rogue
+get 38 outlaw
 get 4 trainings_bivouac
 get 85 archer
 get 4 spells_hut
 get 75 witch
-get 50 rogue
+get 50 outlaw
 get 195 archer
 get 100 witch
 goto c_savage1
@@ -1301,19 +1301,19 @@ label savage0
 goto_random savage0a savage0b savage0c savage0d
 
 label savage0a
-get 10 rogue 10 archer
+get 10 outlaw 10 archer
 goto savage1
 
 label savage0b
-get 8 rogue 8 archer
+get 8 outlaw 8 archer
 goto savage1
 
 label savage0c
-get 10 rogue 10 huntress
+get 10 outlaw 10 huntress
 goto savage1
 
 label savage0d
-get 10 rogue 1 lumbermill
+get 10 outlaw 1 lumbermill
 goto savage1
 
 label savage1
@@ -1355,7 +1355,7 @@ get 10 huntress 10 archer 10 witch
 goto_random savage3 savage_attack
 
 label savage3
-get 18 rogue
+get 18 outlaw
 get 3 trainings_bivouac
 get 65 archer
 get 40 huntress
@@ -1365,14 +1365,14 @@ get 2 freebooters_wood
 get 50 huntress
 get 70 archer
 get 68 witch
-get 28 rogue
+get 28 outlaw
 get 80 witch
 get 60 huntress
 get 85 archer
 goto_random savage4 savage_attack
 
 label savage4
-get 40 rogue
+get 40 outlaw
 get 95 witch
 get 100 archer
 goto_random savage5 savage_attack
@@ -1421,7 +1421,7 @@ get 10 thief 6 ambush_turret
 goto dark_elf1
 
 label dark_elf0d
-get 10 rogue 1 lumbermill 1 blacksmith 10 ambush_turret
+get 10 outlaw 1 lumbermill 1 blacksmith 10 ambush_turret
 goto dark_elf1
 
 label dark_elf1

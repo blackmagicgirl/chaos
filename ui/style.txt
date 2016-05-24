@@ -11,16 +11,20 @@ recommended_maps kd1 kd2 kd6 ce2 m2
 
 def a_recall
 alert 77964 ; 1328
+shortcut r
 
 def high_quality_explosives
 title 77002
+shortcut h
 
 def highest_quality_explosives
 title 77198
+shortcut i
 
 def a_make_explosives_magazine_explode
 title 77003
 alert 77704
+shortcut e
 
 def small_explosion
 title 77045
@@ -31,6 +35,7 @@ title 77045
 def a_bewitchment
 title 77026
 alert 77580
+shortcut b
 
 ; common buildings
 
@@ -44,16 +49,7 @@ is_a starting_point
 def explosives_magazine
 is_a building
 title 77001
-
-def wall
-is_a building
-title 4331
-shortcut a
-
-def gate
-is_a building
-title 4332
-shortcut g
+shortcut e
 
 ; units
 
@@ -70,15 +66,13 @@ death 77710
 
 ; races
 
-
-
-
 def technical
 title 77201
 
 def worker
 is_a peasant
 title 77066
+shortcut w
 
 def musketeer
 is_a walking_unit
@@ -87,6 +81,7 @@ noise repeat 25 77529 77530 77531 77532
 launch_attack 77525
 attack_hit 77523
 keyboard soldier1
+shortcut m
 
 def grenade_launcher
 is_a walking_unit
@@ -95,12 +90,14 @@ noise repeat 18 77683 77684 77685 77686
 launch_attack 77682
 attack_hit 77681
 keyboard soldier2
+shortcut g
 
 def spying_airship
 is_a bomber_airship
 title 77074
 move 77712
 keyboard soldier3
+shortcut s
 
 def fighter_airship
 is_a bomber_airship
@@ -109,6 +106,7 @@ move 77719
 launch_attack 77524
 attack_hit 77523
 keyboard soldier4
+shortcut f
 
 def bomber_airship
 is_a unit
@@ -119,6 +117,7 @@ noise repeat 20 77504 77505 77506
 death 77508 77661
 launch_attack 77507
 attack_hit 77500
+shortcut b
 
 def transporting_airship
 is_a unit
@@ -127,15 +126,18 @@ noise repeat 25 77658 77659 77660
 move 77657
 death 77508 77661
 keyboard soldier6
+shortcut t
 
 def city_hall
 is_a building
 title 77059
 noise repeat 25 77722
+shortcut c
 
 def governor_headquarters
 is_a city_hall
 title 77060
+shortcut g
 
 def chancellor's_palace
 is_a city_hall
@@ -145,41 +147,49 @@ def animal_farm
 is_a building
 title 77081
 noise repeat 30 77967 77968
+shortcut f
 
 def military_camp
 is_a building
 title 77063
 noise repeat 20 77621 77622
+shortcut m
 
 def airship_factory
 is_a building
 title 77070
 noise repeat 20 77623 77624
+shortcut a
 
 def hospital
 is_a building
 title 77011
 noise repeat 30 77520 77521 77522
+shortcut h
 
 def hidden_bomb
 is_a building
 title 77216
+shortcut b
 
 def observation_post
 is_a building
 title 77157
+shortcut o
 
 def ballistic_anti_air_battery
 is_a building
 title 77062
 launch_attack 77516
 attack_hit 77523
+shortcut b
 
 def missile_anti_air_battery
 is_a building
 title 77158
 launch_attack 77889
 attack_hit 77881
+shortcut m
 
 def tear_gas
 title 77051
@@ -187,16 +197,21 @@ title 77051
 def a_tear_gas
 title 77051
 alert 77718
+shortcut g
 
 def reinforced_structure
 title 77217
+shortcut r
 
 def public_health
 title 77012
+shortcut p
 
 def a_make_hidden_bomb_explode
 title 77003
 alert 77975
+shortcut e
+
 
 def robotic
 title 77202
@@ -204,6 +219,7 @@ title 77202
 def geek
 is_a peasant
 title 77096
+shortcut g
 
 def magnetic_shooter
 is_a unit
@@ -213,6 +229,7 @@ move 77886 77887
 launch_attack 77991
 attack_hit 77992
 keyboard soldier1
+shortcut s
 
 def laser_shooter
 is_a unit
@@ -222,6 +239,7 @@ move 77886 77887
 launch_attack 77752
 attack_hit 77762
 keyboard soldier2
+shortcut l
 
 def magnetic_cannon
 is_a unit
@@ -230,6 +248,7 @@ move 77753
 launch_attack 77771
 attack_hit 77772
 keyboard soldier3
+shortcut c
 
 def plasma_cannon
 is_a unit
@@ -238,23 +257,27 @@ move 77756
 launch_attack 77761
 attack_hit 77759 77760
 keyboard soldier4
+shortcut p
 
 def overheated_plasma_cannon
 is_a plasma_cannon
 title 77080
 noise repeat 2 77594
+shortcut o
 
 def mobile_sensor
 is_a unit
 title 77103
 move 77754
 keyboard soldier5
+shortcut m
 
 def drone
 is_a unit
 title 77105
 move 77745
 keyboard soldier6
+shortcut d
 
 def laser_vessel
 is_a unit
@@ -263,99 +286,119 @@ move 77744
 launch_attack 77751
 attack_hit 77762
 keyboard soldier7
+shortcut v
 
 def garage
 is_a building
 title 77084
 noise repeat 30 77731 77732
+shortcut g
 
 def hydroponic_farm
 is_a building
 title 77088
 noise repeat 30 77945 77952
+shortcut h
 
 def minicomputer
 is_a building
 title 77085
 noise repeat 30 77736
+shortcut m
 
 def mainframe_computer
-is_a building
+is_a minicomputer
 title 77086
 noise repeat 30 77728 77729 77730 77737
 
 def supercomputer
-is_a building
+is_a mainframe_computer
 title 77087
 noise repeat 30 77733 77734 77735 77738 77770
+shortcut s
 
 def magnecite_extractor
 is_a building
 title 77015
 noise repeat 30 77716
+shortcut a
 
 def robotic_factory
 is_a building
 title 77089
 noise repeat 35 77726 77727
+shortcut f
 
 def optical_laboratory
 is_a building
 title 77090
 noise repeat 30 77768
+shortcut o
 
 def signal_modulator
 is_a building
 title 77092
 noise repeat 45 77769
+shortcut s
 
 def particle_accelerator
 is_a building
 title 77093
 noise repeat 45 77767
+shortcut p
 
 def laser_tower
 is_a building
 title 77094
 launch_attack 77828
 attack_hit 77762
+shortcut l
 
 def radar_tower
 is_a building
 title 77095
 noise repeat 30 77749 77776
+shortcut r
 
 def magnetic_tower
 is_a building
 title 77020
 noise repeat 40 77558 77559 77560 77561 77562
 attack_hit 77563
+shortcut t
 
 def electric_trap
 is_a building
 title 77016
 launch_attack 77539
 attack_hit 77548 77549 77550 77551
+shortcut e
 
 def laser_power
 title 77108
+shortcut p
 
 def plasma_power
 title 77109
+shortcut p
 
 def a_radar_image
 title 77110
 alert 77750
+shortcut i
 
 def high_quality_magnesite
 title 77043
+shortcut h
 
 def highest_quality_magnesite
 title 77044
+shortcut i
 
 def a_hypnotic_wave
 title 77019
 alert 77557
+shortcut h
 
 def magnetic_field
 title 77172
@@ -364,10 +407,13 @@ noise loop 77905
 def a_magnetic_field
 title 77172
 alert 77906
+shortcut m
 
 def a_uncontrolled_magnetic_field
 title 77173
 alert 77907
+shortcut u
+
 
 def undead
 title 77203
@@ -376,6 +422,7 @@ def undead_slave
 is_a peasant
 title 77120
 attack_hit 77811
+shortcut u
 
 def ghoul
 is_a walking_unit
@@ -383,10 +430,15 @@ title 77031
 noise repeat 30 77584 77585
 attack_hit 77573 77574 77593
 keyboard soldier1
+shortcut g
 
+def skeleton
+keyboard soldier 2
+shortcut s
 
 def necromancer
 keyboard soldier3
+shortcut n
 
 def lich
 is_a walking_unit
@@ -395,6 +447,7 @@ noise repeat 18 77820 77821 77822
 launch_attack 77823
 attack_hit 77824
 keyboard soldier4
+shortcut l
 
 def thestral
 is_a unit
@@ -404,6 +457,7 @@ move 77786 77787
 launch_attack 77788 77789
 attack_hit 77793 77959 77592 77501 77586
 keyboard soldier5
+shortcut t
 
 def cursed_gargoyle
 is_a unit
@@ -411,6 +465,7 @@ title 77057
 noise repeat 12 77511 77515
 move 77786 77787
 keyboard soldier6
+shortcut g
 
 def ectoplasm
 is_a unit
@@ -466,6 +521,19 @@ attack_hit 77598 77599 77600
 death 77601 77602
 keyboard soldier7
 
+def necromantic_field
+is_a unit
+title 77327
+noise loop 78546
+death 78548
+keyboard soldier7
+
+def plagued_cadaver
+is_a unit
+title 77329
+noise repeat 6 78550 78551 78552 9999 9999 9999 9999 9999 9999 9999 9999 9999 9999
+keyboard soldier7
+
 def spook_light
 is_a unit
 title 77131
@@ -473,53 +541,62 @@ noise repeat 18 77827
 attack_hit 77817
 death 77518
 
-noise repeat 30 77949 77955
-
 def graveyard
 is_a building
 title 77032
 noise repeat 30 77575
+shortcut g
 
 def mausoleum
 is_a building
 title 77113
 noise repeat 20 77796 77797 77805
+shortcut m
 
 def necropolis
 noise repeat 20 77798 77799 77805
+shortcut n
 
 def scavengers_farm
 is_a building
 title 77091
+noise repeat 30 77949 77955
+shortcut f
 
 def vault
 is_a building
 title 77114
+shortcut v
 
 def crypt
 is_a building
 title 77117
 noise repeat 30 77800
+shortcut c
 
 def labyrinth
 is_a building
 title 77118
 noise repeat 15 77781 77782 77801
+shortcut l
 
 def dark_tower
 is_a building
 title 77162
 noise repeat 30 77941 77958
+shortcut d
 
 def spectral_tower
 is_a building
 title 77030
 noise repeat 30 77566 77567 77568
+shortcut s
 
 def foggy_tower
 is_a building
 title 77163
 noise repeat 30 77910 77933
+shortcut f
 
 def torments_tower
 is_a building
@@ -527,17 +604,20 @@ title 77164
 noise repeat 120 77890
 launch_attack 77891
 attack_hit 77892
+shortcut t
 
 def terrors_tower
 is_a torments_tower
 title 77166
 noise repeat 120 77894
 launch_attack 77895
+shortcut t
 
 def bone_trap
 is_a building
 title 77119
 attack_hit 77816
+shortcut b
 
 def carnivorous_plant
 is_a unit
@@ -549,21 +629,26 @@ death 77620
 def a_cross_through_wall
 title 77130
 alert 77831
+shortcut c
 
 def deadly_fog
 title 4305
+shortcut d
 
 def a_call_spook_lights
 title 77132
 alert 77818
+shortcut s
 
 def a_call_ectoplasm
 title 77028
 alert 77582
+shortcut e
 
 def a_evil_fog
 title 77029
 alert 77583
+shortcut e
 
 def evil_fog
 title 77029
@@ -571,39 +656,32 @@ title 77029
 def a_sow_darkness_tree
 title 77035
 alert 77597
+shortcut d
 
 def a_recycle_deads_into_carnivorous_plants
 title 77039
 alert 77609
+shortcut r
 
 def a_soul_absorption
 title 77326
 alert 78549
-
-def necromantic_field
-is_a unit
-title 77327
-noise loop 78546
-death 78548
-keyboard soldier7
+shortcut a
 
 def a_necromantic_field
 title 77327
 alert 78547
+shortcut n
 
 def a_cadaveric_explosion
 title 77328
 alert 78553
-
-def plagued_cadaver
-is_a unit
-title 77329
-noise repeat 6 78550 78551 78552 9999 9999 9999 9999 9999 9999 9999 9999 9999 9999
-keyboard soldier7
+shortcut e
 
 def a_plagued_cadaver
 title 77330
 alert 78554
+shortcut p
 
 def deaths_breath
 title 77116
@@ -611,32 +689,37 @@ title 77116
 def a_deaths_breath
 title 77116
 alert 77940
+shortcut d
 
 def a_raise_ghosts
 title 77168
 alert 78509
+shortcut r
 
 def a_raise_zombies
 title 77170
 alert 78510
+shortcut r
 
 def a_raise_flesh_golems
 title 77171
 alert 78529
+shortcut r
 
 
 def elven
 title 77204
 
-
 def harvester
 is_a peasant
 title 77150
+shortcut h
 
 def nimble_archer
 is_a archer
 title 77152
 keyboard soldier1
+shortcut a
 
 def nimble_archer_clone
 is_a nimble_archer
@@ -646,6 +729,7 @@ death 77518
 def forest_archer
 is_a archer
 title 77153
+shortcut f
 
 def centaur
 is_a unit
@@ -655,6 +739,7 @@ move 77852 77853
 launch_attack 77859
 attack_hit 1301
 keyboard soldier3
+shortcut s
 
 def erudite
 is_a walking_unit
@@ -662,12 +747,23 @@ title 77067
 launch_attack 77902
 attack_hit 77901
 keyboard soldier4
+shortcut e
+
+def energy_ball
+is_a unit
+title 77064
+noise loop 77517
+launch_attack 77536
+attack_hit 77897 77898
+death 77518
+keyboard soldier5
 
 def druid
 is_a walking_unit
 title 77159
 attack_hit 77537
 keyboard soldier6
+shortcut d
 
 def serenity_tree
 is_a unit
@@ -685,73 +781,90 @@ death 77656
 def clearing
 is_a building
 title 77141
+shortcut c
 
 def arboreal_city
 is_a building
 title 77142
 noise repeat 30 77849
+shortcut a
 
 def domain
 is_a building
 title 77143
 noise repeat 30 77845 77846
+shortcut d
 
 def fruit_farm
 is_a building
 title 77007
 noise repeat 30 77512 77513 77514
+shortcut f
 
 def wooded_arena
 is_a building
 title 77144
+shortcut w
 
 def leafy_garden
 is_a building
 title 77145
 noise repeat 30 77850 77851
+shortcut l
 
 def sunny_library
 is_a building
 title 77111
 noise repeat 20 77954 77970
+shortcut s
 
 def enchanted_forest
 is_a building
 title 77148
 noise repeat 30 77847 77848
+shortcut e
 
 def vigilance_tower
 is_a building
 title 77174
+shortcut v
+
+def guardtower
+shortcut g
 
 def high_guard_tower
 is_a guardtower
 title 77180
+shortcut h
 
 def leafy_tower
 is_a building
 title 77187
+shortcut l
 
 def sharp_leaf_tower
 is_a building
 title 77188
 launch_attack 77974
 attack_hit 77999
+shortcut s
 
 def mirrors_tower
 is_a building
 title 77191
+shortcut m
 
 def solar_tower
 is_a building
 title 77195
 launch_attack 78513
+shortcut s
 
 def root_trap
 is_a building
 title 77149
 attack_hit 77863
-
+shortcut r
 
 def u_unstable_portal
 title 77136
@@ -759,6 +872,7 @@ title 77136
 def a_unstable_portal
 title 77136
 alert 77832
+shortcut u
 
 def u_stable_portal
 title 77137
@@ -766,14 +880,17 @@ title 77137
 def a_stable_portal
 title 77137
 alert 1328
+shortcut p
 
 def a_sow_serenity_tree
 title 77036
 alert 77597
+shortcut s
 
 def a_recycle_deads_into_medicinal_plants
 title 77040
 alert 77609
+shortcut r
 
 def wooded_illusion
 title 77208
@@ -782,28 +899,25 @@ death 77518
 def a_wooded_illusion
 title 77208
 alert 77932
+shortcut i
+
 def steel_leaf
 title 77306
-
-def energy_ball
-is_a unit
-title 77064
-noise loop 77517
-launch_attack 77536
-attack_hit 77897 77898
-death 77518
-keyboard soldier5
+shortcut s
 
 def a_energy_ball
 title 77065
 alert 77526
+shortcut e
 
 def a_clone
 title 77071
 alert 77565
+shortcut c
 
 def magic_power
 title 77121
+shortcut m
 
 def meteors
 is_a 
@@ -811,6 +925,8 @@ title 4306
 
 def a_meteors
 alert 77637
+shortcut m
+
 def solar_ray
 is_a unit
 title 77206
@@ -819,80 +935,90 @@ attack_hit 77897 77898
 def a_solar_ray
 title 77206
 alert 78512
-
-
-
-
-
-
-
+shortcut r
 
 
 def traditional
 title 77200
 
-
 def serf
 is_a peasant
 title 77056
+shortcut s
 
 def crossbowman
 is_a archer
 title 77050
 attack_hit 77676 77677 77678 77679
 keyboard soldier1
+shortcut c
 
 def knight
 keyboard soldier2
+shortcut k
 
 def paladin
 is_a knight
 title 77034
 move 77533 77534
 keyboard soldier3
+shortcut a
 
 def priest
 keyboard soldier5
+shortcut p
 
 def dragon
 keyboard soldier6
+shortcut d
 
 def small_fort
 is_a building
 title 77055
+shortcut o
+
+def keep
+shortcut k
 
 def castle
 attack_hit 78508
+shortcut c
 
 def stables
 noise repeat 25 1305 1306 77720 77721
+shortcut s
 
 def surveillance_tower
 is_a building
 title 77127
+shortcut t
 
 def defense_tower
 is_a building
 title 77140
 launch_attack 1042
 attack_hit 77676 77677 77678 77679
+shortcut d
 
 def ballista_tower
 is_a defense_tower
 title 77146
 noise repeat 30 78501
 launch_attack 78500
+shortcut b
 
 def BELL_TOWER
 is_a building
 title 77147
 noise repeat 60 78502
+shortcut b
 
 def BELFRY
 is_a building
 title 77151
 noise repeat 60 78503
 attack_hit 78508
+shortcut b
 
 def holy_vision
 title 77054
@@ -921,27 +1047,31 @@ title 77155
 def combat_ardor
 title 77156
 
+
 def savage
 title 77006
 
-def rogue
+def outlaw
 is_a peasant
 title 77072
 launch_attack 77700
 attack_hit 77701 77702 77703
 keyboard worker
+shortcut o
 
 def huntress
 is_a walking_unit
 title 77022
 attack_hit 77547 1302
 keyboard soldier1
+shortcut h
 
 def mahout
 is_a walking_unit
 title 77324
 attack_hit 77598 77599 77600
 keyboard soldier1
+shortcut m
 
 def witch
 is_a walking_unit
@@ -950,6 +1080,7 @@ noise repeat 25 77899 77900
 launch_attack 77896
 attack_hit 77897 77898
 keyboard soldier3
+shortcut w
 
 def snake
 is_a unit
@@ -993,6 +1124,7 @@ is_a elephant
 title 77325
 launch_attack 1042
 attack_hit 1301
+shortcut e
 
 def winged_horse
 is_a unit
@@ -1022,45 +1154,54 @@ is_a peaceful_vine
 title 77312
 launch_attack 78522 78523
 attack_hit 77598 77599 77600
+shortcut i
 
 def hideout
 is_a building
 title 77008
+shortcut h
 
 def thicket_of_the_brigands
 is_a building
 title 77009
+shortcut t
 
 def freebooters_wood
 is_a building
 title 77010
+shortcut f
 
 def hunting_ground
 is_a building
 title 77099
 noise repeat 30 77950 77951
+shortcut g
 
 def burrow
 is_a building
 title 77005
-
+shortcut b
 
 def trainings_bivouac
 is_a building
 title 77013
+shortcut t
 
 def wild_beasts_cage
 is_a building
 title 77017
 noise repeat 20 77625
+shortcut w
 
 def mahouts_house
 is_a building
 title 77294
+shortcut m
 
 def spells_hut
 is_a building
 title 77021
+shortcut s
 
 def arrows_trap
 is_a building
@@ -1075,11 +1216,12 @@ noise loop 77903
 def a_penetrating_roots
 title 77169
 alert 77904
+shortcut r
 
 def a_sow_sentinel_tree
 title 77025
 alert 77597
-
+shortcut s
 
 def swarm
 title 77165
@@ -1088,6 +1230,7 @@ noise loop 77873
 def a_swarm
 title 77165
 alert 77867
+shortcut w
 
 def green_storm
 title 77167
@@ -1096,38 +1239,42 @@ noise loop 77874
 def a_green_storm
 title 77167
 alert 77866
+shortcut g
 
 def a_charm_snakes
 title 77213
 alert 77909 77911
-
+shortcut s
 
 def a_tame_wolves
 title 77033
 alert 77632 77633
+shortcut w
 
 def a_tame_lions
 title 77049
 alert 77674 77675
+shortcut l
 
 def a_tame_winged_horses
 title 77125
 alert 77632 77633 77674 77675 77909 77911
-
+shortcut h
 
 def a_tame_elephants
 title 77310
 alert 78524
-
+shortcut e
 
 def a_sow_vine
 title 77313
 alert 77597
+shortcut v
 
 def a_set_arrows_trap
 title 77314
 alert 78525
-
+shortcut a
 
 
 def orc
@@ -1137,27 +1284,32 @@ def peon
 is_a peasant
 title 77184
 keyboard worker
+shortcut p
 
 def bruiser_troll
 is_a walking_unit
 title 77185
 attack_hit 77919 77920 77921
 keyboard soldier1
+shortcut t
 
 def slaughter_troll
 is_a bruiser_troll
 title 77186
 noise repeat 20 77925 77926 77927
 attack_hit 77922 77923 77924
+shortcut s
 
 def war_troll
 is_a slaughter_troll
 title 77139
 attack_hit 77545 77546 77540
+shortcut w
 
 def berserker_troll
 is_a war_troll
 title 77305
+shortcut b
 
 def fireworks_launcher
 is_a walking_unit
@@ -1165,6 +1317,7 @@ title 77138
 launch_attack 77825
 attack_hit 77826
 keyboard soldier2
+shortcut f
 
 def ogre_stone_thrower
 is_a walking_unit
@@ -1173,6 +1326,7 @@ noise repeat 20 77916 77917 77918
 launch_attack 77957
 attack_hit 77538 77541
 keyboard soldier3
+shortcut o
 
 def winged_serpent
 is_a unit
@@ -1182,6 +1336,7 @@ move 77947 77948
 launch_attack 77944 9999 9999 9999
 attack_hit 77592 77610 77595 77596
 keyboard soldier4
+shortcut w
 
 def hippogriff
 is_a unit
@@ -1190,17 +1345,20 @@ noise repeat 30 77934 77935 77936
 move 77884 77885
 attack_hit 77502 77503
 keyboard soldier5
+shortcut h
 
 def voodoo_priest
 is_a walking_unit
 title 77194
 keyboard soldier6
+shortcut v
 
 def kamikaze
 is_a walking_unit
 title 77196
 attack_hit 77544 77569 77570 77571 77572
 keyboard soldier6
+shortcut k
 
 def transport_ball
 is_a unit
@@ -1208,89 +1366,105 @@ title 77197
 move 77928
 death 77929 77930
 keyboard soldier7
+shortcut b
 
 def encampment
 is_a building
 title 77175
+shortcut e
 
 def fortified_encampment
 is_a building
 title 77176
+shortcut f
 
 def fortress
-is_a building
+is_a fortified_encampment
 title 77177
 
 def pigsty
 is_a building
 title 77083
 noise repeat 30 77969
+shortcut p
 
 def pit
 is_a building
 title 77178
+shortcut i
 
 def pen
 is_a building
 title 77179
 noise repeat 30 77953 77956
+shortcut e
 
 def nest
 is_a building
 title 77181
+shortcut n
 
 def tepee
 is_a building
 title 77182
 noise repeat 20 77631
+shortcut t
 
 def promontory
 is_a building
 title 77207
+shortcut r
 
 def scree
 is_a building
 title 77211
 launch_attack 77519
 attack_hit 77527
+shortcut s
 
 def massive_tower
 is_a scree
 title 77212
 attack_hit 77538 77541
+shortcut m
 
 def cannontower
 attack_hit 77543
-
+shortcut c
 
 def grape_shot_tower
 is_a building
 title 77209
 launch_attack 77542
 attack_hit 77977 
+shortcut g
 
 def bombards_tower
 is_a cannontower
 title 77210
 attack_hit 77538 77541
-
+shortcut b
 
 def spike_trap
 is_a building
 title 77183
 launch_attack 77971
 attack_hit 77972
+shortcut s
 
 def a_possession
 title 77199
 alert 77931
+shortcut p
 
 def a_make_kamikaze_explode
 title 77003
 alert 77975
+shortcut e
 
 def aggressiveness
 title 77214
+shortcut a
 
 def thunderbolt
 title 77046
@@ -1299,6 +1473,7 @@ noise 77510
 def a_thunderbolt
 title 77046
 alert 77510
+shortcut t
 
 def cloud_storm
 title 77068
@@ -1307,9 +1482,11 @@ noise loop 77528
 def a_cloud_storm
 title 77068
 alert 77535
+shortcut c
 
 def berserk
 title 77304
+shortcut b
 
 
 def elemental
@@ -1320,6 +1497,7 @@ is_a peasant
 title 77161
 noise repeat 20 77879 77880
 move 77878
+shortcut f
 
 def earth_elemental
 is_a unit
@@ -1327,6 +1505,7 @@ title 77226
 move 77989 77990
 attack_hit 77979
 keyboard soldier1
+shortcut e
 
 def fire_elemental
 is_a unit
@@ -1335,6 +1514,7 @@ noise loop 77998
 launch_attack 77988
 attack_hit 77993
 keyboard soldier2
+shortcut i
 
 def water_elemental
 is_a unit
@@ -1343,6 +1523,7 @@ noise loop 77996
 launch_attack 77994
 attack_hit 77995
 keyboard soldier3
+shortcut w
 
 def air_elemental
 is_a unit
@@ -1351,94 +1532,11 @@ move 77981 77982
 launch_attack 77978
 attack_hit 77897 77898
 keyboard soldier4
+shortcut a
 
 def mage
 keyboard soldier5
-
-def fairy_ring
-is_a building
-title 77218
-launch_attack 77980
-attack_hit 77908
-
-def power_farm
-is_a building
-title 77097
-noise repeat 30 77937 77946
-
-def earth_tower
-is_a building
-title 77222
-noise repeat 30 77986
-launch_attack 77888
-
-def fire_tower
-is_a building
-title 77219
-noise repeat 30 77997
-launch_attack 77869
-attack_hit 77870
-
-def water_tower
-is_a building
-title 77220
-noise repeat 30 77987
-launch_attack 77984
-attack_hit 77985
-
-def air_tower
-is_a building
-title 77221
-noise repeat 30 77983
-launch_attack 77812
-attack_hit 77973
-
-def super_armor
-title 77075
-
-def super_attack
-title 77076
-
-def super_life
-title 77077
-
-def super_speed
-title 77078
-
-
-def earthquake
-title 77315
-noise loop 78527
-
-def a_earthquake
-title 77315
-alert 78526
-
-def fireblast
-title 77316
-
-def a_fireblast
-title 77316
-alert 78544
-
-def recover
-title 77317
-
-def a_recover
-title 77317
-alert 78528
-
-def a_windblast
-title 77318
-alert 78541
-
-def volcanic_eruption
-title 77319
-noise loop 78533
-
-def a_volcanic_eruption
-title 77319
-alert 78511
+shortcut m
 
 def mud_golem
 is_a unit
@@ -1448,26 +1546,6 @@ launch_attack 78536 78537 78538
 attack_hit 77502 77503
 keyboard soldier6
 
-def a_mud_golem
-title 77320
-alert 78539
-
-def sandstorm
-title 77321
-noise loop 78542
-
-def a_sandstorm
-title 77321
-alert 78543
-
-def vapor_cloud
-title 77322
-noise loop 78545
-
-def a_vapor_cloud
-title 77322
-alert 78540
-
 def magnetic_thunderstorm
 is_a unit
 title 77018
@@ -1476,9 +1554,132 @@ launch_attack 77552 77553 77554
 attack_hit 77548 77549 77550 77551
 death 77564
 
+def fairy_ring
+is_a building
+title 77218
+launch_attack 77980
+attack_hit 77908
+shortcut r
+
+def power_farm
+is_a building
+title 77097
+noise repeat 30 77937 77946
+shortcut p
+
+def earth_tower
+is_a building
+title 77222
+noise repeat 30 77986
+launch_attack 77888
+shortcut e
+
+def fire_tower
+is_a building
+title 77219
+noise repeat 30 77997
+launch_attack 77869
+attack_hit 77870
+shortcut f
+
+def water_tower
+is_a building
+title 77220
+noise repeat 30 77987
+launch_attack 77984
+attack_hit 77985
+shortcut w
+
+def air_tower
+is_a building
+title 77221
+noise repeat 30 77983
+launch_attack 77812
+attack_hit 77973
+shortcut a
+
+def super_armor
+title 77075
+shortcut s
+
+def super_attack
+title 77076
+shortcut s
+
+def super_life
+title 77077
+shortcut s
+
+def super_speed
+title 77078
+shortcut s
+
+def earthquake
+title 77315
+noise loop 78527
+
+def a_earthquake
+title 77315
+alert 78526
+shortcut e
+
+def fireblast
+title 77316
+
+def a_fireblast
+title 77316
+alert 78544
+shortcut f
+
+def recover
+title 77317
+
+def a_recover
+title 77317
+alert 78528
+shortcut r
+
+def a_windblast
+title 77318
+alert 78541
+shortcut w
+
+def volcanic_eruption
+title 77319
+noise loop 78533
+
+def a_volcanic_eruption
+title 77319
+alert 78511
+shortcut v
+
+def a_mud_golem
+title 77320
+alert 78539
+shortcut m
+
+def sandstorm
+title 77321
+noise loop 78542
+
+def a_sandstorm
+title 77321
+alert 78543
+shortcut s
+
+def vapor_cloud
+title 77322
+noise loop 78545
+
+def a_vapor_cloud
+title 77322
+alert 78540
+shortcut c
+
 def a_magnetic_thunderstorm
 title 77018
 alert 77555
+shortcut t
 
 def ice_sky
 title 77323
@@ -1487,8 +1688,7 @@ noise loop 78531
 def a_ice_sky
 title 77323
 alert 78532
-
-
+shortcut i
 
 
 def vermin
@@ -1508,6 +1708,7 @@ title 77269
 move 77725 77746
 attack_hit 77690 77793 77586
 keyboard worker
+shortcut w
 
 def winged_worker
 is_a walking_worker
@@ -1518,6 +1719,7 @@ def royal_worker
 is_a winged_worker
 title 77245
 move 77791 77792
+shortcut r
 
 def guardian_termite
 is_a unit
@@ -1525,18 +1727,21 @@ title 77243
 move 77642 77643
 attack_hit 77959 77592
 keyboard soldier1
+shortcut g
 
 def conqueror_termite
 is_a guardian_termite
 title 77244
 move 77694 77695
 attack_hit 77959 77592 77501
+shortcut c
 
 def armored_termite
 is_a conqueror_termite
 title 77246
 move 77696 77697
 attack_hit 77501 77669 77670
+shortcut a
 
 def angry_wasp
 is_a unit
@@ -1544,17 +1749,20 @@ title 77247
 move 77705 77706
 attack_hit 77690 77793 77586
 keyboard soldier2
+shortcut a
 
 def sting_shooter_wasp
 is_a angry_wasp
 title 77248
 move 77713 77714
 launch_attack 77715 77717
+shortcut t
 
 def thousand_stings_wasp
 is_a sting_shooter_wasp
 title 77249
 move 77723 77724
+shortcut h
 
 def pinch_crab
 is_a unit
@@ -1562,6 +1770,7 @@ title 77253
 move 77644 77645 77646
 attack_hit 77647 77648
 keyboard soldier3
+shortcut p
 
 def shell_shooter_crab
 is_a pinch_crab
@@ -1569,6 +1778,7 @@ title 77254
 move 77650 77651 77652
 launch_attack 77700
 attack_hit 77649
+shortcut h
 
 def siege_crab
 is_a shell_shooter_crab
@@ -1576,6 +1786,7 @@ title 77255
 move 77673 77680 77691
 launch_attack 77957
 attack_hit 77527
+shortcut i
 
 def insatiable_mosquito
 is_a unit
@@ -1583,18 +1794,21 @@ title 77250
 move 77640
 attack_hit 77959 77592
 keyboard soldier4
+shortcut m
 
 def terrible_mosquito
 is_a insatiable_mosquito
 title 77251
 move 77692
 attack_hit 77959 77592 77501
+shortcut t
 
 def bloodthirsty_mosquito
 is_a terrible_mosquito
 title 77252
 move 77693
 attack_hit 77501 77669 77670
+shortcut b
 
 def rowdy_mushroom
 is_a unit
@@ -1602,11 +1816,13 @@ title 77256
 move 77755 77757 
 attack_hit 77574 77593
 keyboard soldier5
+shortcut r
 
 def toxic_mushroom
 is_a rowdy_mushroom
 title 77257
 noise repeat 30 77758
+shortcut t
 
 def devastating_mushroom
 is_a toxic_mushroom
@@ -1614,6 +1830,7 @@ title 77258
 noise repeat 10 77758
 move 77747
 attack_hit 77687 77690
+shortcut d
 
 def scout_firefly
 is_a unit
@@ -1621,17 +1838,20 @@ title 77259
 noise repeat 15 77778
 move 77790
 keyboard soldier6
+shortcut c
 
 def dazzling_firefly
 is_a scout_firefly
 title 77260
 noise repeat 15 77779
+shortcut d
 
 def blazing_firefly
 is_a dazzling_firefly
 title 77261
 noise repeat 15 77780
 attack_hit 77817
+shortcut b
 
 def larvae
 is_a unit
@@ -1641,59 +1861,71 @@ keyboard soldier7
 def stump
 is_a building
 title 77230
+shortcut s
 
 def brooder
 is_a building
 title 77231
 keyboard worker
+shortcut b
 
 def nursery
 is_a brooder
 title 77232
+shortcut n
 
 def larval_laboratory
 is_a nursery
 title 77233
+shortcut a
 
 def transgenic_reproducer
 is_a larval_laboratory
 title 77234
+shortcut t
 
 def multiplier_incubator
 is_a transgenic_reproducer
 title 77235
+shortcut m
 
 def fruit_tree
 is_a building
 title 77236
 death 77601 77602
+shortcut f
 
 def termite_nest
 is_a building
 title 77237
 keyboard soldier1
+shortcut n
 
 def honey_tree
 is_a building
 title 77238
 death 77601 77602
 keyboard soldier2
+shortcut h
 
 def mud_room
 is_a building
 title 77239
 keyboard soldier3
+shortcut m
 
 def mushroom_gallery
 is_a building
 title 77240
 keyboard soldier5
+shortcut g
 
 def twinkling_tree
 is_a building
 title 77241
 death 77601 77602
 keyboard soldier6
+shortcut t
 
 def carnivorous_tree
 is_a building
@@ -1702,6 +1934,7 @@ launch_attack 78522 78523
 attack_hit 77592 77610 77595 77596
 death 77601 77602
 keyboard soldier7
+shortcut c
 
 def devourer_tree
 is_a voracious_tree
@@ -1709,12 +1942,14 @@ title 77242
 noise repeat 10 77763 77764 77765
 launch_attack 77766 77773 77774 78522 78523
 attack_hit 77668 77669 77670
+shortcut d
 
 def voracious_tree
 is_a carnivorous_tree
 title 77302
 noise repeat 10 78504 78505
 launch_attack 78506 78507 78522 78523
+shortcut v
 
 def supply_tunnel
 is_a building
@@ -1723,10 +1958,12 @@ title 77133
 def a_stump
 title 77262
 alert 77777
+shortcut s
 
 def a_larvae1
 title 77263
 alert 77833 77834
+shortcut l
 
 def a_larvae2
 is_a a_larvae1
@@ -1740,10 +1977,10 @@ is_a a_larvae1
 def a_larvae5
 is_a a_larvae1
 
-
 def a_survival_pheromone
 title 77265
 alert 77775
+shortcut u
 
 def toxic_spores
 title 77266
@@ -1751,6 +1988,7 @@ title 77266
 def a_toxic_spores
 title 77266
 alert 77775
+shortcut t
 
 def hallucinogenic_spores
 title 77267
@@ -1758,6 +1996,7 @@ title 77267
 def a_hallucinogenic_spores
 title 77267
 alert 77775
+shortcut h
 
 def regenerative_spores
 title 77268
@@ -1765,10 +2004,12 @@ title 77268
 def a_regenerative_spores
 title 77268
 alert 77775
+shortcut r
 
 def a_supply_tunnel
 title 77134
 alert 77802
+shortcut d
 
 def blaze
 title 77135
@@ -1777,8 +2018,7 @@ noise loop 77912
 def a_blaze
 title 77135
 alert 77913
-
-
+shortcut b
 
 
 def dark_elf
@@ -1787,22 +2027,27 @@ title 77271
 def thief
 is_a peasant
 title 77279
+shortcut t
 
 def prowler
 is_a footman
 title 77280
 keyboard soldier1
+shortcut p
 
 def assassin
 is_a prowler
 title 77281
+shortcut a
 
 def master_assassin
 is_a assassin
 title 77282
+shortcut m
 
 def darkarcher
 keyboard soldier2
+shortcut a
 
 def illusionist
 is_a walking_unit
@@ -1810,6 +2055,7 @@ title 77283
 launch_attack 77856
 attack_hit 77844
 keyboard soldier3
+shortcut i
 
 def doctor
 is_a walking_unit
@@ -1817,6 +2063,7 @@ title 77285
 launch_attack 77856
 attack_hit 77857 77858 77864
 keyboard soldier4
+shortcut d
 
 def puppet
 is_a unit
@@ -1824,6 +2071,7 @@ title 77284
 move 77841 77842
 attack_hit 1039 1040 1041
 keyboard soldier5
+shortcut p
 
 def shadow
 is_a footman
@@ -1865,48 +2113,67 @@ def fatal_blade
 is_a unit
 title 77291
 attack_hit 77829
-death  
- 
+death 
+
+def rain_of_arrows
+is_a unit
+title 77297
+attack_hit 1301
+death 
+
+def root_system
+is_a unit
+title 77303
+attack_hit 77863
 
 def shack
 is_a building
 title 77272
+shortcut s
 
 def villa
 is_a shack
 title 77273
+shortcut v
 
 def manor
 is_a villa
 title 77274
+shortcut m
 
 def cutlery
 is_a building
 title 77275
 noise repeat 20 77855
+shortcut c
 
 def aviary
 is_a building
 title 77295
 noise repeat 30 77836
+shortcut a
 
-defdef playhouse
+def playhouse
 is_a building
 title 77276
+shortcut p
 
 def cenacle
 is_a building
 title 77277
+shortcut e
 
 def watchfulness_turret
 is_a building
 title 77215
+shortcut w
 
 def ambush_turret
 is_a building
 title 77298
 launch_attack 77856
 attack_hit 77844
+shortcut a
 
 def ambush_high_tower
 is_a ambush_turret
@@ -1915,37 +2182,45 @@ title 77299
 def perch_tower
 is_a building
 title 77300
-def windy_tower
+shortcut p
 
+def windy_tower
 is_a building
 title 77278
+shortcut w
 
 def a_puppet
 title 77308
 alert 77839 77840
+shortcut p
 
 def a_flying_shuriken
 title 77286
 alert 77835
+shortcut f
 
 def a_vortex
 title 77287
 alert 77838
+shortcut v
 
 def a_whirlwind
 title 77288
 alert 77843
+shortcut w
 
 def throwing_technique
 title 77289
+shortcut t
 
 def animation_speed
 title 77290
-
+shortcut a
 
 def a_fatal_blade
 title 77291
 alert 77829
+shortcut f
 
 def smoke
 title 77292
@@ -1953,34 +2228,25 @@ title 77292
 def a_smoke
 title 77292
 alert 77877
+shortcut s
 
- a_pigeon
+def a_pigeon
 title 77307
 alert 77876
-
-def rain_of_arrows
-is_a unit
-title 77297
-attack_hit 1301
-death 
-
-def a_rain_of_arrows
-title 77297
-alert 77872
-
-def root_system
-is_a unit
-title 77303
-attack_hit 77863
+shortcut p
 
 def a_root_system
 title 77303
 alert 78514
+shortcut r
+
+def a_rain_of_arrows
+title 77297
+alert 77872
+shortcut r
 
 def a_call_shadows
 title 77293
 alert 78555
-
-
-
+shortcut s
 
