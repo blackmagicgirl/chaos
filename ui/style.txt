@@ -167,11 +167,6 @@ title 77011
 noise repeat 30 77520 77521 77522
 shortcut h
 
-def hidden_bomb
-is_a building
-title 77216
-shortcut b
-
 def observation_post
 is_a building
 title 77157
@@ -190,6 +185,51 @@ title 77158
 launch_attack 77889
 attack_hit 77881
 shortcut m
+
+def hidden_bomb
+is_a building
+title 77216
+shortcut b
+
+def barbed_wire_fence
+is_a building
+title 77345
+shortcut w
+
+def camouflaged_barbed_wire_fence
+is_a building
+title 77346
+shortcut c
+
+def barricade
+is_a building
+title 77347
+shortcut b
+
+def fortification
+is_a building
+title 77348
+shortcut f
+
+def bastian
+is_a building
+title 77349
+shortcut b
+
+def guard_post
+is_a building
+title 77350
+shortcut g
+
+def guard_house
+is_a building
+title 77351
+shortcut h
+
+def fortified_guard_house
+is_a building
+title 77352
+shortcut f
 
 def tear_gas
 title 77051
@@ -1063,6 +1103,12 @@ title 77151
 noise repeat 60 78503
 attack_hit 78508
 shortcut b
+
+def massive_wall
+shortcut m
+
+def massive_gate
+shortcut m
 
 def holy_vision
 title 77054

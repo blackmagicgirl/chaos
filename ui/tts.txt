@@ -345,3 +345,11 @@
 77342 electromagnetic pulse
 77343 power surge
 77344 emergency power
+77345 barbed wire fence
+77346 camouflaged barbed wire fence
+77347 barricade
+77348 fortification
+77349 bastian
+77350 guard post
+77351 guard house
+77352 fortified guard house

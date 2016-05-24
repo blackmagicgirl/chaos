@@ -217,15 +217,15 @@ food_provided 0
 is_buildable_on_exits_only 1
 provides_survival 0
 
-def wall
+def basic_wall
 is_a barrier
-cost 7 9
+cost 0 0
 hp_max 500
 time_cost 90
 
-def gate
+def basic_gate
 is_a barrier
-cost 10 10
+cost 0 0
 hp_max 450
 time_cost 90
 is_a_gate 1
@@ -504,6 +504,35 @@ storable_resource_types 0
 transport_capacity 30
 can_upgrade_to 
 
+def wall
+is_a basic_wall
+cost 7 9
+time_cost 90
+hp_max 500
+can_upgrade_to massive_wall
+
+def massive_wall
+is_a wall
+cost 21 27
+time_cost 270
+requirements keep
+hp_max 2000
+can_upgrade_to
+
+def gate
+is_a basic_gate
+cost 10 10
+time_cost 90
+hp_max 450
+can_upgrade_to massive_gate
+
+def massive_gate
+is_a gate
+cost 30 30
+time_cost 270
+requirements keep
+hp_max 1800
+can_upgrade_to
 
 
 ; traditional units
@@ -861,9 +890,100 @@ can_use a_make_hidden_bomb_explode
 mana_max 200
 mana_regen 0
 
+def barbed_wire_fence
+is_a basic_wall
+cost 14 4
+hp_max 300
+timecost 15
+requirements city_hall
+range 3
+cooldown 0.25
+damage 1
+can_upgrade_to camouflaged_barbed_wire_fence barricade
 
+def camouflaged_barbed_wire_fence
+is_a barbed_wire_fence
+cost 16 12
+timecost 25
+hp_max 450
+is_a_detector 1
+is_invisible 1
+armor 0.5
+damage 1.5
 
+def barricade
+is_a barbed_wire_fence
+cost 40 20
+hp_max 500
+timecost 45
+requirements city_hall military_camp
+armor 4
+can_upgrade_to fortification bastian
 
+def fortification
+is_a basic_wall
+cost 40 40
+timecost 70
+requirements governor_headquarters military_camp blacksmith
+hp_max 1400
+is_a_detector 1
+armor 8
+can_upgrade_to
+
+def bastian
+is_a basic_wall
+cost 60 50
+timecost 75
+requirements chancellor's_palace military_camp explosives_magazine
+hp_max 1300
+armor 12
+bonus_height 1
+is_ballistic 1
+range 12
+minimal_range 4
+cooldown 4
+damage 15
+target_types ground air
+can_use high_quality_explosives highest_quality_explosives
+can_upgrade_to
+
+def guard_post
+is_a basic_gate
+cost 16 10
+timecost 20
+requirements military_camp city_hall
+hp_max 350
+armor 2
+transport_capacity 4
+
+def guard_house
+is_a guard_post
+cost 30 25
+timecost 35
+requirements governor_headquarters military_camp
+hp_max 600
+armor 5
+transport_capacity 25
+is_a_detector 1
+
+def fortified_guard_house
+is_a guard_house
+cost 70 55
+timecost 50
+requirements chancellor's_palace military_camp explosives_magazine blacksmith
+hp_max 950
+armor 10
+transport_capacity 60
+range 12
+cooldown 2.5
+damage 8
+target_types ground
+damage_radius 1.5
+splash 1
+minimal_range 4
+bonus_height 1
+is_ballistic 1
+can_use high_quality_explosives highest_quality_explosives
 
 ; Technical units
 
@@ -1218,7 +1338,7 @@ is_buildable_anywhere 1
 can_use high_quality_magnesite highest_quality_magnesite
 
 def electric_fence
-is_a wall
+is_a basic_wall
 cost 20 0
 requirements magnecite_extractor
 hp_max 400
@@ -1247,7 +1367,7 @@ can_use a_power_surge
 
 
 def plasma_shield
-is_a wall
+is_a basic_wall
 cost 80 0
 requirements particle_accelerator
 hp_max 1000
@@ -1264,7 +1384,7 @@ damage_radius 3
 can_use plasma_power a_emergency_power
 
 def electromagnetic_field
-is_a gate
+is_a basic_gate
 cost 30 0
 time_cost 20
 hp_max 768
@@ -1294,7 +1414,7 @@ can_use high_quality_magnecite highest_quality_magnecite a_emp
 can_upgrade_to
 
 def laser_gate
-is_a gate
+is_a basic_gate
 cost 30 0
 time_cost 30
 requirements optical_laboratory
@@ -3099,7 +3219,7 @@ target_types ground air
 
 
 def earth_wall
-is_a wall
+is_a basic_wall
 requirements earth_tower
 cost 100 75
 hp_max 1000
@@ -3108,7 +3228,7 @@ time_cost 650
 bonus_height 1
 
 def fire_wall
-is_a wall
+is_a basic_wall
 requirements fire_tower
 cost 75 100
 hp_max 450
@@ -3124,7 +3244,7 @@ splash 1
 damage_radius 1.4
 
 def water_gate
-is_a gate
+is_a basic_gate
 requirements water_tower
 cost 125 50
 hp_max 800
@@ -3136,7 +3256,7 @@ is_a_detector 1
 heal_level 10
 
 def air_gate
-is_a gate
+is_a basic_gate
 requirements air_tower
 cost 50 125
 hp_max 600
