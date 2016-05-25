@@ -446,7 +446,7 @@ time_cost 60
 hp_max 33
 bonus_height 1
 is_buildable_anywhere 1
-can_upgrade_to defense_tower BELL_TOWER
+can_upgrade_to defense_tower bell_tower
 
 def defense_tower
 is_a surveillance_tower
@@ -477,7 +477,7 @@ minimal_range 4
 is_ballistic 1
 can_upgrade_to 
 
-def BELL_TOWER
+def bell_tower
 is_a surveillance_tower
 cost 7 5
 time_cost 85
@@ -485,12 +485,12 @@ requirements keep temple
 hp_max 50
 armor 0.75
 heal_level 1
-can_research COMBAT_TOUGHNESS
+can_research combat_toughness
 transport_capacity 10
-can_upgrade_to BELFRY
+can_upgrade_to belfry
 
-def BELFRY
-is_a BELL_TOWER
+def belfry
+is_a bell_tower
 cost 12 8
 time_cost 120
 requirements castle
@@ -499,7 +499,7 @@ armor 1
 range 2
 damage 3
 cooldown 4
-can_research COMBAT_TOUGHNESS combat_ardor
+can_research combat_toughness combat_ardor
 storable_resource_types 0
 transport_capacity 30
 can_upgrade_to 
@@ -518,7 +518,7 @@ can_build farm barracks lumbermill blacksmith stables workshop temple  dragonsla
 range 0.8
 cooldown 1
 damage 1.5
-can_use COMBAT_TOUGHNESS combat_ardor
+can_use combat_toughness combat_ardor
 
 def crossbowman
 class soldier
@@ -527,7 +527,7 @@ time_cost 18
 hp_max 12
 speed 1.5
 requirements lumbermill
-can_use archer_weapon archer_armor archer_range COMBAT_TOUGHNESS combat_ardor
+can_use archer_weapon archer_armor archer_range combat_toughness combat_ardor
 armor 0.5
 cooldown 3
 target_types ground air
@@ -542,7 +542,7 @@ food_cost 2
 time_cost 20
 hp_max 25
 requirements keep stables
-can_use melee_weapon melee_armor horse_speed COMBAT_TOUGHNESS combat_ardor
+can_use melee_weapon melee_armor horse_speed combat_toughness combat_ardor
 speed 2.3
 speed_bonus 1
 armor 1
@@ -595,7 +595,7 @@ hp_max_bonus 5
 mana_max 200
 mana_regen 1
 speed 1
-can_use a_holy_vision a_exorcism a_conversion a_resurrection superhealer super_exorcism COMBAT_TOUGHNESS
+can_use a_holy_vision a_exorcism a_conversion a_resurrection superhealer super_exorcism combat_toughness
 heal_level 1
 transport_volume 2
 is_a_detector 1
@@ -637,7 +637,7 @@ time_cost 150
 effect bonus heal_level 2
 requirements castle
 
-def COMBAT_TOUGHNESS
+def combat_toughness
 class upgrade
 cost 8 4
 time_cost 150

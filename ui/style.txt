@@ -1007,13 +1007,13 @@ noise repeat 30 78501
 launch_attack 78500
 shortcut b
 
-def BELL_TOWER
+def bell_tower
 is_a building
 title 77147
 noise repeat 60 78502
 shortcut b
 
-def BELFRY
+def belfry
 is_a building
 title 77151
 noise repeat 60 78503
@@ -1041,7 +1041,7 @@ title 77104
 def dragons_speed
 title 77107
 
-def COMBAT_TOUGHNESS
+def combat_toughness
 title 77155
 
 def combat_ardor

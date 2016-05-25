@@ -147,7 +147,7 @@
 77144 wooded arena
 77145 leafy garden
 77146 ballista tower
-77147 BELL TOWER
+77147 bell tower
 77148 enchanted forest
 77149 root trap
 77150 harvester
@@ -155,7 +155,7 @@
 77152 nimble archer
 77153 forest archer
 77154 centaur
-77155 combat TOUGHNESS
+77155 combat toughness
 77156 combat ardor
 77157 observation post
 77158 missile anti-air battery
@@ -242,7 +242,7 @@
 77239 mud room
 77240 mushroom gallery
 77241 twinkling tree
-77242 Devourer tree
+77242 devourer tree
 77243 guardian termite
 77244 conqueror termite
 77245 royal worker
@@ -277,7 +277,7 @@
 77274 manor
 77275 cutlery
 77276 playhouse
-77277 Cenacle
+77277 cenacle
 77278 windy tower
 77279 thief
 77280 prowler
@@ -291,7 +291,7 @@
 77288 whirlwind
 77289 throwing technique
 77290 animation speed
-77291 Fatal Blade
+77291 fatal blade
 77292 smoke
 77293 call shadows
 77294 mahouts' house
