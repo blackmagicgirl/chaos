@@ -433,7 +433,7 @@ keyboard soldier1
 shortcut g
 
 def skeleton
-keyboard soldier 2
+keyboard soldier2
 shortcut s
 
 def necromancer
@@ -626,10 +626,10 @@ noise repeat 20 77616 77617 77618 77619
 attack_hit 77612 77613 77614 77615
 death 77620
 
-def a_cross_through_wall
+def a_pass_through_wall
 title 77130
 alert 77831
-shortcut c
+shortcut a
 
 def deadly_fog
 title 4305
@@ -1514,7 +1514,7 @@ noise loop 77998
 launch_attack 77988
 attack_hit 77993
 keyboard soldier2
-shortcut i
+shortcut f
 
 def water_elemental
 is_a unit
