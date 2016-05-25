@@ -894,7 +894,7 @@ def barbed_wire_fence
 is_a basic_wall
 cost 14 4
 hp_max 300
-timecost 15
+time_cost 15
 requirements city_hall
 range 3
 cooldown 0.25
@@ -904,7 +904,7 @@ can_upgrade_to camouflaged_barbed_wire_fence barricade
 def camouflaged_barbed_wire_fence
 is_a barbed_wire_fence
 cost 16 12
-timecost 25
+time_cost 25
 hp_max 450
 is_a_detector 1
 is_invisible 1
@@ -915,7 +915,7 @@ def barricade
 is_a barbed_wire_fence
 cost 40 20
 hp_max 500
-timecost 45
+time_cost 45
 requirements city_hall military_camp
 armor 4
 can_upgrade_to fortification bastian
@@ -923,7 +923,7 @@ can_upgrade_to fortification bastian
 def fortification
 is_a basic_wall
 cost 40 40
-timecost 70
+time_cost 70
 requirements governor_headquarters military_camp blacksmith
 hp_max 1400
 is_a_detector 1
@@ -933,7 +933,7 @@ can_upgrade_to
 def bastian
 is_a basic_wall
 cost 60 50
-timecost 75
+time_cost 75
 requirements chancellor's_palace military_camp explosives_magazine
 hp_max 1300
 armor 12
@@ -950,7 +950,7 @@ can_upgrade_to
 def guard_post
 is_a basic_gate
 cost 16 10
-timecost 20
+time_cost 20
 requirements military_camp city_hall
 hp_max 350
 armor 2
@@ -959,7 +959,7 @@ transport_capacity 4
 def guard_house
 is_a guard_post
 cost 30 25
-timecost 35
+time_cost 35
 requirements governor_headquarters military_camp
 hp_max 600
 armor 5
@@ -969,7 +969,7 @@ is_a_detector 1
 def fortified_guard_house
 is_a guard_house
 cost 70 55
-timecost 50
+time_cost 50
 requirements chancellor's_palace military_camp explosives_magazine blacksmith
 hp_max 950
 armor 10
@@ -1652,7 +1652,7 @@ mana_cost 100
 requirements signal_modulator
 effect summon 10 emp
 effect_target ask
-effect_range nearby
+effect_range 12
 
 def power_surge
 class effect
@@ -1663,10 +1663,10 @@ def a_power_surge
 class ability
 mana_cost 200
 effect summon 3 power_surge
-effect_target ask
-effect_range square
+effect_target self
+effect_range 6
 
-def emergency_power:
+def emergency_power
 class effect
 heal_level 1250
 
@@ -1675,7 +1675,7 @@ class ability
 mana_cost 200
 effect summon 1 emergency_power
 effect_target self
-effect_range square
+effect_range 1
 
 
 

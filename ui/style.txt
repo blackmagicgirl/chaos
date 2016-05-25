@@ -361,7 +361,7 @@ def magnecite_extractor
 is_a building
 title 77015
 noise repeat 30 77716
-shortcut a
+shortcut x
 
 def robotic_factory
 is_a building
@@ -392,13 +392,13 @@ is_a building
 title 77094
 launch_attack 77828
 attack_hit 77762
-shortcut l
+shortcut r
 
 def radar_tower
 is_a building
 title 77095
 noise repeat 30 77749 77776
-shortcut r
+shortcut d
 
 def magnetic_tower
 is_a building
@@ -410,33 +410,39 @@ shortcut t
 def electric_fence
 is_a building
 title 77336
+shortcut e
 
 def high_voltage_electric_fence
 is_a building
 title 77337
+shortcut h
 
 def plasma_shield
 is_a building
 title 77338
+shortcut l
 
 def electromagnetic_field
 is_a building
 title 77339
+shortcut c
 
 def high_voltage_electromagnetic_field
 is_a building
 title 77340
+shortcut h
 
 def laser_gate
 is_a building
 title 77341
+shortcut a
 
 def electric_trap
 is_a building
 title 77016
 launch_attack 77539
 attack_hit 77548 77549 77550 77551
-shortcut e
+shortcut i
 
 def laser_power
 title 77108
@@ -479,24 +485,33 @@ alert 77907
 shortcut u
 
 def emp
+class effect
 title 77342
 ;noise_loop ?
 
 def a_emp
+class ability
 title 77342
 ;alert ??
+shortcut e
 
 def power_surge
+class effect
 title 77343
 
 def a_power_surge
+class ability
 title 77343
+shortcut s
 
 def emergency_power
+class effect
 title 77344
 
 def a_emergency_power
+class ability
 title 77344
+shortcut e
 
 
 def undead
@@ -1691,18 +1706,22 @@ shortcut a
 def earth_wall
 is_a building
 title 77332
+shortcut h
 
 def fire_wall
 is_a building
 title 77333
+shortcut i
 
 def water_gate
 is_a building
 title 77334
+shortcut t
 
 def air_gate
 is_a building
 title 77335
+shortcut g
 
 def super_armor
 title 77075
