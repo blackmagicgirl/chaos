@@ -2264,4 +2264,55 @@ attack_hit 77592 77610 77595 77596
 def grey
 is_a peasant
 title 42003
->>>>>>> c90e977... Foundation for the alien race.
+
+def nutri_matic
+is_a building
+title 42004
+noise repeat 30 77512 77513 77514
+
+def indoctrination_pod
+is_a building
+title 42005
+noise repeat 30 77716
+
+def troop_replicator
+is_a building
+title 42006
+noise repeat 30 77566 77567 77568
+
+def factory
+is_a building
+title 42009
+noise repeat 30 77566 77567 77568
+
+def sensor_array
+is_a building
+title 42011
+noise repeat 30 77716
+
+def defense_array
+is_a sensor_array
+title 42012
+noise repeat 30 77716
+
+def human_slave
+is_a walking_unit
+title 42007
+attack_hit 77919 77920 77921
+keyboard soldier1
+
+def reptilian_warrior
+is_a walking_unit
+title 42008
+noise repeat 20 77916 77917 77918
+launch_attack 77957
+attack_hit 77538 77541
+keyboard soldier3
+
+def flying_saucer
+is_a unit
+title 42010
+noise repeat 20 77916 77917 77918
+launch_attack 77957
+attack_hit 77538 77541
+keyboard soldier4

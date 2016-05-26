@@ -335,3 +335,12 @@
 42001 alien
 42002 mother ship
 42003 grey
+42004 nutri matic
+42005 indoctrination pod
+42006 troop replicator
+42007 human slave
+42008 reptilian warrior
+42009 factory
+42010 flying saucer
+42011 sensor array
+42012 defense array

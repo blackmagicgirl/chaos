@@ -4728,18 +4728,19 @@ requirements mother_ship
 can_train flying_saucer
 can_research improved_armor superspeed
 
-def surveillance_tower
+def sensor_array
 class building
 provides_survival 0
-cost 4 2
+cost 14 9
 time_cost 60
 hp_max 33
 bonus_height 1
 is_buildable_anywhere 1
-can_upgrade_to defense_tower BELL_TOWER
+can_upgrade_to defense_array laser_grid
+is_a_detector 1
 
-def defense_tower
-is_a surveillance_tower
+def defense_array
+is_a sensor_array
 cost 7 5
 time_cost 85
 requirements mother_ship lumbermill
@@ -4796,7 +4797,7 @@ can_upgrade_to
 
 
 
-; traditional units
+; alien units
 
 def grey
 is_a peasant
@@ -4810,13 +4811,13 @@ cooldown 1
 damage 1.5
 can_use COMBAT_TOUGHNESS combat_ardor
 
-def crossbowman
+def human_slave
 class soldier
 cost 6 2
 time_cost 18
 hp_max 12
 speed 1.5
-requirements lumbermill
+requirements mother_ship
 can_use archer_weapon archer_armor archer_range COMBAT_TOUGHNESS combat_ardor
 armor 0.5
 cooldown 3
@@ -4825,13 +4826,13 @@ range 8
 damage 6
 is_ballistic 1
 
-def knight
+def reptilian_warrior
 class soldier
 cost 14 0
 food_cost 2
 time_cost 20
 hp_max 25
-requirements mother_ship stables
+requirements mother_ship nutri_matic
 can_use melee_weapon melee_armor horse_speed COMBAT_TOUGHNESS combat_ardor
 speed 2.3
 speed_bonus 1
@@ -4891,7 +4892,7 @@ transport_volume 2
 is_a_detector 1
 harm_target_type undead
 
-def dragon
+def flying_saucer
 class soldier
 cost 15 10
 food_cost 3
@@ -4907,7 +4908,7 @@ target_types ground air
 damage_radius 1
 splash 1
 transport_volume 99
-can_use dragons_life dragons_attack dragons_breath dragons_armor dragons_speed
+can_use 
 is_a_detector 1
 transport_capacity 2
 
