@@ -165,11 +165,6 @@ transport_volume 99
 corpse 0
 is_a_detector 1
 
-
-
-
-
-
 ; Elements common to multiple races
 
 ; Common buildings
@@ -1780,7 +1775,7 @@ is_a spectral_tower
 cost 32 12
 requirements necropolis
 time_cost 290
-can_use a_raise_ghosts a_evil_fog a_call_ectoplasm
+can_use a_raise_ghosts a_evil_fog a_call_ectoplasm a_summon_fog_bank
 mana_regen 0.75
 is_invisible 0
 is_a_cloaker 1
@@ -1813,11 +1808,107 @@ cost 15 11
 time_cost 160
 requirements labyrinth
 hp_max 66
-can_use a_raise_flesh_golems
+can_use a_raise_flesh_golems a_summon_wall_of_death
 range 4
 damage 9
 damage_radius 4
 can_upgrade_to 
+
+def wall_of_bones
+is_a basic_wall
+cost 13 9
+time_cost 25
+requirements graveyard
+hp_max 333
+armor 3
+is_a_detector 1
+can_upgrade_to towering_wall_of_bones
+
+def towering_wall_of_bones
+is_a wall_of_bones
+cost 26 18
+time_cost 40
+requirements mausoleum
+hp_max 666
+armor 6
+can_upgrade_to
+
+def fog_bank
+is_a basic_gate
+cost 0 0
+time_cost 0
+hp_max 66
+is_invisible 1
+is_a_detector 1
+is_a_cloaker 1
+is_cloakable 0
+can_upgrade_to devouring_fog
+
+def devouring_fog
+is_a fog_bank
+cost 66
+time_cost 10
+requirements foggy_tower terrors_tower
+hp_max 666
+hp_regen 6
+mana_max 200
+mana_regen 0.66
+armor 6
+range 6
+damage 3
+damage_radius 4
+splash 1
+cooldown 1.5
+airground_type air
+target_types ground air
+bonus_height 1
+transport_capacity 8
+can_use a_deadly_fog
+can_upgrade_to
+
+def wall_of_death
+is_a basic_wall
+cost 0 0
+time_cost 1
+hp_max 1
+is_vulnerable 0
+is_invisible 1
+is_a_detector 1
+range 6
+harm_level 66
+harm_target_type healable
+target_types ground air
+can_upgrade_to ghostly_gate cursed_wall
+
+def ghostly_gate
+is_a basic_gate
+cost  25 5
+time_cost 30
+requirements necropolis
+hp_max 1100
+hp_regen 5
+mana_max 666
+mana_regen 0.2
+armor 6
+is_a_detector 1
+is_invisible 1
+bonus_height 1
+can_use a_raise_ghosts a_summon_ghosts
+
+def cursed_wall
+is_a basic_wall
+cost 55 35
+time_cost 45
+hp_max 666
+armor 12
+mana_max 666
+mana_regen 0.6
+range 9
+harm_level 9
+harm_target_type healable
+target_types healable ground air
+bonus_height 1
+can_use a_soul_absorption a_raise_dead
 
 def bone_trap
 class building
@@ -1855,7 +1946,7 @@ speed 1.3
 range 1
 cooldown 1
 damage 1.8
-can_build scavengers_farm vault crypt labyrinth graveyard dark_tower bone_trap gate wall
+can_build scavengers_farm vault crypt labyrinth graveyard dark_tower bone_trap wall_of_bones
 
 def ghoul
 is_a entity
@@ -1942,7 +2033,7 @@ hp_max 22
 mana_max 200
 mana_regen 1 ; mana / second
 speed 1
-can_use a_raise_dead a_cadaveric_explosion a_plagued_cadaver a_sow_darkness_tree a_necromantic_field
+can_use a_raise_dead a_cadaveric_explosion a_plagued_cadaver a_sow_darkness_tree a_necromantic_field a_summon_wall_of_death
 range 4.5
 cooldown 2
 damage 5
@@ -1957,7 +2048,7 @@ hp_max 22
 mana_max 200
 mana_regen 1
 speed 1
-can_use a_pass_through_wall a_deadly_fog a_call_spook_lights
+can_use a_pass_through_wall a_deadly_fog a_call_spook_lights a_summon_fog_bank
 range 4.5
 cooldown 4
 damage 8
@@ -2223,6 +2314,23 @@ effect summon 3 deaths_breath
 effect_target ask
 effect_range 12
 
+def a_summon_fog_bank
+class ability
+mana_cost 100
+effect summon 40 fog_bank
+effect_target ask
+effect_range 9
+
+def a_summon_wall_of_death
+class ability
+mana_cost 200
+effect summon 66 wall_of_death
+effect_range 9
+effect_target ask
+
+def a_summon_ghosts
+class ability
+effect summon 300 13 ghost
 
 
 ; Elves

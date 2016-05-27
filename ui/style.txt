@@ -193,42 +193,42 @@ shortcut b
 
 def barbed_wire_fence
 is_a building
-title 77345
+title 77346
 shortcut w
 
 def camouflaged_barbed_wire_fence
 is_a building
-title 77346
+title 77347
 shortcut c
 
 def barricade
 is_a building
-title 77347
+title 77348
 shortcut b
 
 def fortification
 is_a building
-title 77348
+title 77349
 shortcut f
 
 def bastian
 is_a building
-title 77349
+title 77350
 shortcut b
 
 def guard_post
 is_a building
-title 77350
+title 77351
 shortcut g
 
 def guard_house
 is_a building
-title 77351
+title 77352
 shortcut h
 
 def fortified_guard_house
 is_a building
-title 77352
+title 77353
 shortcut f
 
 def tear_gas
@@ -409,32 +409,32 @@ shortcut t
 
 def electric_fence
 is_a building
-title 77336
+title 77337
 shortcut e
 
 def high_voltage_electric_fence
 is_a building
-title 77337
+title 77338
 shortcut h
 
 def plasma_shield
 is_a building
-title 77338
+title 77339
 shortcut l
 
 def electromagnetic_field
 is_a building
-title 77339
+title 77340
 shortcut c
 
 def high_voltage_electromagnetic_field
 is_a building
-title 77340
+title 77341
 shortcut h
 
 def laser_gate
 is_a building
-title 77341
+title 77342
 shortcut a
 
 def electric_trap
@@ -486,31 +486,31 @@ shortcut u
 
 def emp
 class effect
-title 77342
+title 77343
 ;noise_loop ?
 
 def a_emp
 class ability
-title 77342
+title 77343
 ;alert ??
 shortcut e
 
 def power_surge
 class effect
-title 77343
+title 77344
 
 def a_power_surge
 class ability
-title 77343
+title 77344
 shortcut s
 
 def emergency_power
 class effect
-title 77344
+title 77345
 
 def a_emergency_power
 class ability
-title 77344
+title 77345
 shortcut e
 
 
@@ -712,6 +712,39 @@ noise repeat 120 77894
 launch_attack 77895
 shortcut t
 
+def wall_of_bones
+is_a building
+title 77354
+shortcut w
+
+def towering_wall_of_bones
+is_a building
+title 77355
+shortcut t
+
+def fog_bank
+is_a building
+title 77356
+
+def devouring_fog
+is_a building
+title 77358
+shortcut d
+
+def wall_of_death
+is_a building
+title 77359
+
+def ghostly_gate
+is_a building
+title 77361
+shortcut g
+
+def cursed_wall
+is_a building
+title 77363
+shortcut c
+
 def bone_trap
 is_a building
 title 77119
@@ -804,6 +837,18 @@ def a_raise_flesh_golems
 title 77171
 alert 78529
 shortcut r
+
+def a_summon_fog_bank
+title 77357
+shortcut b
+
+def a_summon_ghosts
+title 77362
+shortcut g
+
+def a_summon_wall_of_death
+title 77360
+shortcut w
 
 
 def elven
@@ -2374,3 +2419,4 @@ def a_call_shadows
 title 77293
 alert 78555
 shortcut s
+

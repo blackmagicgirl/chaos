@@ -336,20 +336,31 @@
 77333 fire wall
 77334 water gate
 77335 air gate
-77336 electric fence
-77337 high voltage electric fence
-77338 plasma shield
-77339 electromagnetic field
-77340 high voltage electromagnetic field
-77341 laser gate
-77342 electromagnetic pulse
-77343 power surge
-77344 emergency power
-77345 barbed wire fence
-77346 camouflaged barbed wire fence
-77347 barricade
-77348 fortification
-77349 bastian
-77350 guard post
-77351 guard house
-77352 fortified guard house
+
+77337 electric fence
+77338 high voltage electric fence
+77339 plasma shield
+77340 electromagnetic field
+77341 high voltage electromagnetic field
+77342 laser gate
+77343 electromagnetic pulse
+77344 power surge
+77345 emergency power
+77346 barbed wire fence
+77347 camouflaged barbed wire fence
+77348 barricade
+77349 fortification
+77350 bastian
+77351 guard post
+77352 guard house
+77353 fortified guard house
+77354 wall of bones
+77355 towering_wall_of_bones
+77356 fog bank
+77357 summon fog bank
+77358 devouring fog
+77359 wall_of_death
+77360 summon wall of death
+77361 ghostly_gate
+77362 summon ghosts
+77363 cursed_wall
