@@ -46,7 +46,7 @@ requirements u_teleportation
 mana_cost 150
 effect teleportation
 effect_target ask
-effect_range anywhere
+effect_range inf
 universal_notification 1
 
 def a_summon_dragon
@@ -698,7 +698,7 @@ class ability
 mana_cost 125
 effect summon 10 holy_vision
 effect_target ask
-effect_range anywhere
+effect_range inf
 
 def exorcism
 class effect
@@ -1401,8 +1401,8 @@ def a_uncontrolled_magnetic_field
 class ability
 mana_cost 150
 effect summon 90 magnetic_field
-effect_target random
-effect_range anywhere
+effect_target worldrandom
+effect_range inf
 
 def a_hypnotic_wave
 class ability
@@ -1416,7 +1416,7 @@ class ability
 mana_cost 80
 effect summon 10 holy_vision
 effect_target ask
-effect_range anywhere
+effect_range inf
 universal_notification 1
 
 
@@ -2392,7 +2392,7 @@ class ability
 mana_cost 150
 effect recall
 effect_target ask
-effect_range anywhere
+effect_range inf
 universal_notification 1
 
 def a_unstable_portal
@@ -2400,8 +2400,8 @@ class ability
 requirements u_unstable_portal
 mana_cost 175
 effect teleportation
-effect_target random
-effect_range anywhere
+effect_target worldrandom
+effect_range inf
 universal_notification 1
 
 def a_stable_portal
@@ -2410,7 +2410,7 @@ requirements u_stable_portal
 mana_cost 200
 effect teleportation
 effect_target ask
-effect_range anywhere
+effect_range inf
 universal_notification 1
 
 def a_energy_ball
@@ -2807,7 +2807,7 @@ class ability
 mana_cost 200
 effect conversion
 effect_target ask
-effect_range anywhere
+effect_range inf
 universal_notification 1
 
 def thunderbolt
