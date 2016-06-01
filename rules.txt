@@ -905,6 +905,7 @@ is_a_detector 1
 is_invisible 1
 armor 0.5
 damage 1.5
+can_upgrade_to 
 
 def barricade
 is_a barbed_wire_fence
@@ -989,7 +990,7 @@ time_cost 10
 hp_max 6
 hp_max_bonus 2
 speed 1.6
-can_build animal_farm military_camp airship_factory hospital city_hall blacksmith explosives_magazine hidden_bomb observation_post gate wall
+can_build animal_farm military_camp airship_factory hospital city_hall blacksmith explosives_magazine hidden_bomb observation_post barbed_wire_fence guard_post
 range 0.7
 cooldown 1
 damage 1
