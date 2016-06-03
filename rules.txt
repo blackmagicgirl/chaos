@@ -595,11 +595,14 @@ hp_max_bonus 5
 mana_max 200
 mana_regen 1
 speed 1
+damage 0.1
+target_types 
 can_use a_holy_vision a_exorcism a_conversion a_resurrection superhealer super_exorcism combat_toughness
 heal_level 1
 transport_volume 2
 is_a_detector 1
 harm_target_type undead
+harm_level 1
 
 def dragon
 class soldier
@@ -921,6 +924,8 @@ airground_type air
 hp_max 8
 hp_max_bonus 3
 speed 1.75
+damage 0.1
+target_types 
 bonus_height 1
 is_repairable 1
 is_healable 0
@@ -990,6 +995,8 @@ airground_type air
 hp_max 26
 hp_max_bonus 6
 speed 1.66
+damage 0.1
+target_types 
 bonus_height 1
 is_repairable 1
 is_healable 0
@@ -1316,6 +1323,8 @@ time_cost 8
 requirements signal_modulator
 hp_max 8
 speed 1.8
+damage 0.1
+target_types 
 is_a_detector 1
 bonus_height 1
 
@@ -1327,6 +1336,8 @@ requirements magnecite_extractor signal_modulator
 airground_type air
 hp_max 8
 speed 2
+damage 0.1
+target_types 
 bonus_height 1
 is_invisible 1
 is_a_detector 1
@@ -1668,6 +1679,8 @@ food_cost 0
 hp_max 12
 armor 1.5
 speed 2
+damage 0.1
+target_types 
 airground_type air
 corpse 0
 transport_volume 99
@@ -1711,6 +1724,8 @@ def ectoplasm
 is_a entity
 hp_max 6
 speed 2
+damage 0.1
+target_types 
 is_invisible 1
 is_a_detector 1
 can_use a_bewitchment
@@ -2293,6 +2308,8 @@ is_teleportable 0
 food_cost 0
 hp_max 20
 speed 0
+damage 0.1
+target_types 
 can_use a_recycle_deads_into_medicinal_plants
 armor 4
 mana_max 500
@@ -2308,6 +2325,8 @@ is_teleportable 0
 food_cost 0
 hp_max 6
 speed 0
+damage 0.1
+target_types 
 is_healable 0
 corpse 0
 heal_level 1
@@ -2744,6 +2763,8 @@ hp_max 15
 mana_max 200
 mana_regen 0.1
 speed 1
+damage 0.1
+target_types 
 can_use a_possession a_thunderbolt a_cloud_storm
 transport_volume 2
 is_a_detector 1
@@ -2770,6 +2791,8 @@ time_cost 25
 hp_max 60
 armor 5
 speed 2
+damage 0.1
+target_types 
 is_repairable 1
 is_healable 0
 transport_capacity 15
@@ -2959,6 +2982,8 @@ food_cost 0
 time_cost 7
 hp_max 3
 speed 1.9
+damage 0.1
+target_types 
 transport_volume 99
 airground_type air
 is_a_detector 1
@@ -3509,6 +3534,8 @@ food_cost 0
 food_provided 2
 hp_max 40
 speed 0
+damage 0.1
+target_types 
 is_healable 0
 corpse 0
 transport_volume 99
@@ -3520,6 +3547,7 @@ cost 2 3
 time_cost 30
 armor 1
 damage 4.5
+target_types ground
 cooldown 2
 range 12
 mana_max 200
@@ -3661,6 +3689,8 @@ storable_resource_types 0 1
 is_buildable_anywhere 1
 mana_max 200
 mana_regen 1
+damage 0.1
+target_types  
 can_use a_stump
 
 def stump
@@ -3823,6 +3853,8 @@ time_cost 0
 hp_max 1
 food_cost 0
 speed 0
+damage 0.1
+target_types 
 corpse 0
 can_upgrade_to walking_worker guardian_termite angry_wasp pinch_crab insatiable_mosquito rowdy_mushroom scout_firefly
 
@@ -4072,6 +4104,8 @@ time_cost 3
 requirements twinkling_tree
 hp_max 3
 speed 1.5
+damage 0.1
+target_types  
 is_a_detector 1
 bonus_height 1
 airground_type air
@@ -4503,6 +4537,8 @@ airground_type air
 def vortex
 class soldier
 food_cost 0
+damage 0.1
+target_types  
 is_healable 0
 corpse 0
 transport_volume 99
@@ -4524,6 +4560,8 @@ is_vulnerable 0
 transport_capacity 12
 airground_type air
 speed 0.75
+damage 0.1
+target_types  
 harm_level 1
 harm_target_type air
 is_cloakable 0
