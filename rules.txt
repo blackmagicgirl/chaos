@@ -2331,6 +2331,7 @@ effect_target ask
 
 def a_summon_ghosts
 class ability
+mana_cost 333
 effect summon 300 13 ghost
 
 
