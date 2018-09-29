@@ -1367,9 +1367,9 @@ is_a basic_wall
 cost 80 0
 requirements particle_accelerator
 hp_max 1000
-hp_regen 6
+hp_regen 3
 mana_max 200
-mana_regen 2
+mana_regen 0.2
 time_cost 90
 armor 4
 range 3
@@ -1384,7 +1384,7 @@ is_a basic_gate
 cost 30 0
 time_cost 20
 hp_max 768
-hp_regen 16
+hp_regen 3
 requirements magnecite_extractor
 armor 1.5
 is_a_detector 1
@@ -1396,9 +1396,9 @@ is_a electromagnetic_field
 cost 50 0
 time_cost 40
 hp_max 1024
-hp_regen 8
+hp_regen 2
 mana_max 300
-mana_regen 2
+mana_regen 1.3
 requirements magnecite_extractor mainframe_computer
 armor 2.5
 range 6
@@ -1887,7 +1887,7 @@ cost  25 5
 time_cost 30
 requirements necropolis
 hp_max 1100
-hp_regen 5
+hp_regen 3
 mana_max 666
 mana_regen 0.2
 armor 6
@@ -3357,7 +3357,7 @@ is_a basic_gate
 requirements water_tower
 cost 125 50
 hp_max 800
-hp_regen 12
+hp_regen 4
 time_cost 500
 armor 2
 bonus_height 1
