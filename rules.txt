@@ -1851,7 +1851,7 @@ cost 66
 time_cost 10
 requirements foggy_tower terrors_tower
 hp_max 666
-hp_regen 6
+hp_regen 3
 mana_max 200
 mana_regen 0.66
 armor 6
