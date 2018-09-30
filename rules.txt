@@ -951,6 +951,7 @@ requirements military_camp city_hall
 hp_max 350
 armor 2
 transport_capacity 4
+can_upgrade_to guard_house
 
 def guard_house
 is_a guard_post
@@ -961,6 +962,7 @@ hp_max 600
 armor 5
 transport_capacity 25
 is_a_detector 1
+can_upgrade_to fortified_guard_house
 
 def fortified_guard_house
 is_a guard_house
